@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+  <html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Politics & Governance</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          text-decoration: none;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 90%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+  }
+
+  #ref {
+    font-family: 'Cabin', sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #2c4a4d;
+  }
+
+	body{
+	  min-height: 100vh;
+	}
+
+	*{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
+
+	#ppg-full-banner {
+		width: 100%;
+		height: 100%;
+	}
+
+  #ppg-proj-banner {
+    width: 100%;
+  }
+
+  #analyses-description {
+    font-family: cabin;
+    size: 15px;
+    color: #CBCBF6;
+    text-align: center;
+    margin: 35px 35px;
+    line-height: 20px;
+  }
+
+  #adbox-1 {
+    height: 525px;
+    width: 350px;
+    float: left;
+    background-color: #8686EA;
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+
+  #ppg-ad1 {
+    height: 500px;
+    width: 325px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 13px;
+  }
+
+  #analyses1 {
+    background-color: #A8A8F0;
+    width: 875px;
+    height: 250px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 140px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analysis-img1 {
+    height: 225px;
+    width: 400px;
+    margin-top: 8px;
+    margin-right: 8px;
+    float: right;
+  }
+
+  #analyses2 {
+    background-color: #B9B9F3;
+    width: 875px;
+    height: 250px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 140px;
+    padding-right: 15px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analysis-img2 {
+    height: 225px;
+    width: 400px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  #analyses3 {
+    background-color: #A8A8F0;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #div2 {
+    background-color: #8686EA;
+    width: 390px;
+    height: 5px;
+  }
+
+  #analyses57 {
+    background-color: #A8A8F0;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+    #analyses57 {
+    background-color: #A8A8F0;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses-img45679 {
+    height: 235px;    
+    width: 375px;
+    margin-top: 7px;
+    margin-left: 7px;
+  
+  }
+
+  #analyses4 {
+    background-color: #B9B9F3;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 500px;
+    margin-top: 25px;
+    margin-left: 130px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses5 {
+    background-color: #A8A8F0;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses6 {
+    background-color: #B9B9F3;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 130px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses7 {
+    background-color: #A8A8F0;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses9 {
+    background-color: #B9B9F3;
+    width: 400px;
+    height: 380px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analyses10 {
+    background-color: #A8A8F0;
+    width: 875px;
+    height: 250px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 130px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analysis-img10 {
+    height: 225px;
+    width: 400px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 10px;
+    float: left;
+  }
+
+  #analyses11 {
+    background-color: #B9B9F3;
+    width: 875px;
+    height: 250px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    border-color: #8686EA;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  #analysis-img11 {
+    height: 225px;
+    width: 400px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 10px;
+    float: right;
+  }
+
+  #news-source-a12 {
+    font-family: poppins;
+    font-size: 30px;
+    margin-top: 60px;
+    color: #4D4D70;
+  }
+
+  #news-source-a11 {
+    font-family: poppins;
+    font-size: 30px;
+    margin-top: 40px;
+    color: #4D4D70;
+  }
+
+  #article-title-a12 {
+    font-family: cabin;
+    font-size: 25px;
+    color: #4D4D70;
+  }
+
+  #news-source-a45 {
+    font-family: poppins;
+    font-size: 28px;
+    color: #4D4D70;
+  }
+
+  #news-source-a38 {
+    font-family: poppins;
+    font-size: 28px;
+    color: #4D4D70;
+    margin-top: 50px;
+
+  }
+
+  #article-title-a356 {
+    font-family: cabin;
+    font-size: 20px;
+    color: #4D4D70;
+    margin-right: 9px;
+  }
+
+  #article-title-a4 {
+    font-family: cabin;
+    font-size: 20px;
+    color: #4D4D70;
+    margin-right: 3px;
+  }
+
+  a {
+    text-decoration: initial;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #adbox-2 {
+    height: 530px;
+    width: 350px;
+    float: right;
+    background-color: #8686EA;
+    margin-right: 140px;
+    margin-top: 20px;
+  }
+
+  #ppg-ad2 {
+    height: 505px;
+    width: 325px;
+    float: right;
+    margin-right: 13px;
+    margin-top: 12px;
+  }
+
+  #adbox-3 {
+    background-color: #8686EA;
+    height: 700px;
+    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+  }
+
+  #ppg-ad3 {
+    height: 420px;
+    width: 320px;
+    margin-left: 130px;
+    margin-top: 10px;
+    float: left;
+  }
+
+  #wps-description {
+    color: #DBDBFF;
+    font-family: cabin;
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px 15px;
+    padding-top: 5px;
+    line-height: 20px;
+  }
+
+  h1 {
+    font-family: poppins;
+    color: #6363E3;
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 35px;
+  }
+
+  #wps-anchor {
+    height: 500px;
+    width: 800px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-color: #8686EA;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  #candidates-description {
+    font-family: cabin;
+    size: 15px;
+    color: #CBCBF6;
+    text-align: center;
+    margin: 35px 35px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  #candidate-banner {
+    background-color: #8686EA;
+    height: 75px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: poppins;
+    font-size: 50px;
+    color: #CBCBF6;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  #candidate-box {
+    background-color: #A8A8F0;
+    height: 425px;
+    width: 350px;
+    float: left;
+    margin-left: 115px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #8686EA;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  #candidate-pic {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 310px;
+    height: 310px;
+  }
+
+  #candidate-name {
+    font-family: poppins;
+    font-size: 22px;
+    color: #4D4D70;
+  }
+
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+  margin-top: 3000px;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+   <div class="giant">
+  <body style="background-color: #CBCBF6;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+  </body>
+  </div>
+
+    <img src="https://64.media.tumblr.com/12e52d2b824774a76c33de8f24f43500/38df548e54f864e5-59/s2048x3072/6b3fd39c549eb9834c87d09c27a0f7831983ca05.png" id="ppg-full-banner">
+
+    <div style="width: 100%;
+          height: 20px;
+          background-color: #6363E3; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/36fe79e44177e68df0ef019d613a8e72/a1a415a7f9b310aa-0c/s2048x3072/9b9c02a229a249306c24f5e6e57a8983021faef6.png" id="ppg-proj-banner">
+
+    <div style="width: 100%;
+          height: 100px;
+          margin-bottom: 20px;
+          background-color: #6363E3; 
+          float: left;">
+
+          <strong><p id="analyses-description">This task is an application of the basic concepts of democracy, governance, and citizen participation to real-life situations. The students analyzed the socio-political news reports and articles assigned by the teacher. The concepts learned in class were incorporated in each analysis as a way to gauge their knowledge and understanding of current events and the democratic government as a whole.</p></strong>
+    </div>
+
+    <div class="container" id="adbox-1">
+      <img src="https://64.media.tumblr.com/ce30cce11a97e15e8fc700850729e56f/d2118d3e281685f2-05/s2048x3072/2d52f90a09c31860af4f313a3171b75e54ff0a27.png" id="ppg-ad1">
+    </div>
+
+      <div class="container" id="analyses1">
+        <img src="https://64.media.tumblr.com/66e61efa79e6465ccf5e9106ee6a50d0/5b465f0ca6599b39-91/s500x750/1dd7dda4be1b29007cf131a73f6d44c87e54c54e.jpg" id="analysis-img1">
+
+        <center><p id="news-source-a12">PHILIPPINE NEWS AGENCY</p></center> <br>
+        <center><em><a href="PPG_IP_G1_Ilo-ilo.html" id="article-title-a12">Ilo-ilo soars in 2020 amid global <br> health pandemic</a></em></center>
+      </div>
+
+      <div class="container" id="analyses2">
+        <img src="https://64.media.tumblr.com/8053e7f17fc43bb16a761a422eec31ab/5b465f0ca6599b39-86/s1280x1920/704f6638207e82563d6155c29d724ff1cb1eaef9.jpg" id="analysis-img2">
+
+        <center><p id="news-source-a12">ABS-CBN NEWS</p></center> <br>
+        <center><em><a href="PPG_IP_G2_Bato_Dela_Rosa.html" id="article-title-a12">Bato on ABS-CBN shutdown, alleged abuses: What is 11,000 losing jobs?</a></em></center>
+      </div>
+
+      <div class="container" id="analyses4">
+        <img src="https://64.media.tumblr.com/bba2ddb2069836a16a5e295faa9fedf0/5b465f0ca6599b39-1e/s2048x3072/4b2a7e7a1d24f0dfe78b08f58da0610f4a9420c8.jpg" id="analyses-img45679">
+
+        <center><p id="news-source-a45">RAPPLER</p></center>
+        <center><em><a href="PPG_IP_G4_Red-tagging.html" id="article-title-a4">Carpio, Morales ask SC: Compel government <br> to explain Parlade red-tagging post</a></em></center>
+      </div>
+
+        <div class="container" id="analyses3">
+          <center><p id="news-source-a38">MANILA STANDARD</p></center>
+          <center><em><a href="PPG_IP_G3_Register_2022.html" id="article-title-a356">Register for 2022 polls, voters urged</a></em></center> <br> <br> <br>
+
+          <div class="container" id="div2"></div>
+
+          <center><p id="news-source-a38">ABS-CBN NEWS</p></center>
+          <center><em><a href="PPG_IP_G8_Pastillas_Officers.html" id="article-title-a356">Duterte unaware 'pastillas' officers he <br> 'fired' are still with Immigration bureau</a></em></center> 
+        </div>
+
+      <div class="container" id="analyses57">
+        <img src="https://64.media.tumblr.com/898b2e5109407ab04bb2aa36f5ef7bd9/5b465f0ca6599b39-1c/s640x960/ca0cf4601617abcf6c2a2f54e7270c9d20df0c9c.jpg" id="analyses-img45679">
+
+        <center><p id="news-source-a45">PHILIPPINE DAILY INQUIRER</p></center>
+        <center><em><a href="PPG_IP_G5_Vico_Sotto.html" id="article-title-a356">Vico Sotto named "anti-corruption &nbsp <br>champion" by US state department</a></em></center>
+      </div>
+
+      <div class="container" id="analyses6">
+        <img src="https://64.media.tumblr.com/a454195c81590ae2baa6a8e226caeb4c/5b465f0ca6599b39-34/s640x960/6e864bc45f6078eea669afd4cfa0802e3ae027d8.jpg" id="analyses-img45679">
+
+        <center><p id="news-source-a45">PHILIPPINE DAILY INQUIRER</p></center>
+        <center><em><a href="PPG_IP_G6_Duterte_ICC.html" id="article-title-a356">Duterte can't evade ICC, and treaty <br> on his own</a></em></center>
+      </div>
+
+      <div class="container" id="analyses57">
+        <img src="https://64.media.tumblr.com/abb598d95122164c7f23de8d5479af4b/5b465f0ca6599b39-8e/s640x960/0cc7d040413a648a2d7c2a7fa55d7e4431aaaae2.png" id="analyses-img45679">
+
+        <center><p id="news-source-a45">PHILIPPINE DAILY INQUIRER</p></center>
+        <center><em><a href="PPG_IP_G7_Robredo_DOH.html" id="article-title-a356">"Sayang": Robredo questions DOH's <br> unused funds amid small "ayuda"; unpaid health workers</a></em></center>
+      </div>
+
+      <div class="container" id="analyses9">
+        <img src="https://64.media.tumblr.com/de6a8ba2aa03be36cba10d1d1ebe0ae9/5b465f0ca6599b39-f7/s640x960/9e87842922e8ca1c47c4c10c6affa088379624b5.png" id="analyses-img45679">
+
+        <center><p id="news-source-a45">PHILIPPINE DAILY INQUIRER</p></center>
+        <center><em><a href="PPG_IP_G9_Drugwar.html" id="article-title-a356">Duterte Drugwar has killed 2 per day, <br> says UP Study</a></em></center>
+      </div>
+
+      <div class="container" id="adbox-2">
+        <img src="https://64.media.tumblr.com/fc38f7a423926776183a976620b1bf23/d2118d3e281685f2-10/s2048x3072/0ff08681318310b2045afa31facaa4ec8f187b1e.png" id="ppg-ad2">
+      </div>
+
+      <div class="container" id="analyses10">
+        <img src="https://64.media.tumblr.com/aa6c52b742d763a7e1200de80c39125a/5b465f0ca6599b39-3b/s640x960/68599b88ca8345f19ca7003ecdec41ab5d0ca26b.jpg" id="analysis-img10">
+
+        <center><p id="news-source-a12">GMA NEWS</p></center> <br>
+        <center><em><a href="PPG_IP_G10_Trolls.html" id="article-title-a12">12 Senators want probe into alleged government-funded troll farms</a></em></center>
+      </div>
+
+      <div class="container" id="analyses11">
+        <img src="https://64.media.tumblr.com/efb2ea2466a766ebd875bef12c695752/5b465f0ca6599b39-39/s2048x3072/1d26ab7c3e6a307db8adc7de7cf22392abd3ec2d.jpg" id="analysis-img11">
+
+        <center><p id="news-source-a11">THINKWELL GLOBAL</p></center> <br>
+        <center><em><a href="PPG_IP_G11_Visayas_Governance.html" id="article-title-a12">Good Governance and Multi-Sectoral Synergy for Pandemic Response in Western Visayas, Philippines</a></em></center>
+      </div> 
+      
+      <div style="width: 100%;
+          height: 20px;
+          background-color: #6363E3; 
+          float: left;">
+     </div>
+
+      <img src="https://64.media.tumblr.com/8db7c302c2b3ab4f03008dd77413b435/a1a415a7f9b310aa-40/s2048x3072/1c7089ef848ff3a3c71db1c90fe58756b383260e.png" id="ppg-proj-banner">
+
+      <div style="width: 100%;
+          height: 20px;
+          background-color: #6363E3; 
+          float: left;">
+     </div>
+
+     <div id="ad3">
+
+      <div class="container" id="adbox-3">
+
+        <strong><p id="wps-description">As part of an in-depth look at the West Philippine Sea conflict with China, students of the General Academic Strand and Humanities strand within the subject Philippine Politics and Governance demonstrated the weight of this issue through artistic means. The students were tasked to create a poster depicting the struggle in asserting the sovereign rights of the country over its Exclusive Economic Zone (EEZ). They were given the liberty to design their poster however they saw fit, implementing the forestanding ideals and rights that the Philippines has over its marine resources within its EEZ.  A clear understanding of this issue will help new voters consider the political candidates whose advocacy is to assert and fight for the sovereign rights of the Philippines in the West Philippine Sea. </p></strong>
+
+        <img src="https://64.media.tumblr.com/d215bde1e3973904f312ef30657215dd/d2118d3e281685f2-61/s2048x3072/63911d707730f8d017112df04cf6e8cc62efb021.png" id="ppg-ad3">
+      </div>
+
+    </div> <br> <br>
+
+    <h1>CLICK ON THE IMAGE TO <br> ACCESS THE POSTER GALLERY!</h1>
+
+    <a href="PPG_IP_WPS_Gallery.html"><img src="https://64.media.tumblr.com/54c45ecb2d59c8a29b4d7c3b0815b35b/0aecd2c876306ca9-0c/s1280x1920/e1f6d92f0ce4ed87a498a6ec82bb8421dc5a3aa7.jpg" id="wps-anchor"></a>
+
+    <div style="width: 100%;
+          height: 20px;
+          background-color: #6363E3; 
+          float: left;">
+     </div>
+
+    <img src="https://64.media.tumblr.com/f4293d884ea039a94259a690cd9cdf0e/a1a415a7f9b310aa-3e/s2048x3072/a0cd663df1a54fdbd81d22daa186e5661f49f036.png" id="ppg-proj-banner">
+
+    <div style="width: 100%;
+          height: 20px;
+          background-color: #6363E3; 
+          float: left;">
+     </div>
+
+     <div style="width: 100%;
+          height: 100px;
+          margin-bottom: 20px;
+          background-color: #6363E3; 
+          float: left;">
+
+          <strong><p id="candidates-description">With the upcoming national elections happening in 2022, It is important that voters should be made aware and educated on the candidates’ political experiences and important accomplishments. As a result, the students of the General Academics and Humanities and Social Sciences strand were tasked to research and gather the necessary information for their assigned candidate as part of their Philippine Politics and Governance class. This task will benefit the students and voters to get to know more about their future leaders so they have a basis on which candidate they will cast their vote for.</p></strong>
+    </div>
+
+    <div class="container" id="candidate-banner">
+      <h2>PRESIDENTIAL CANDIDATES</h2>
+    </div>
+      
+      <div id="presidential-candidates">
+
+      <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/48aad8b03003c89883bba48ea0887a6c/08bdc348bb38258e-de/s1280x1920/2b63c38150ff4793272a756fc1a1686e0a1e8bd3.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Isko_Moreno.html" id="candidate-name">Francisco 'Isko' <br> Moreno Domagoso</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/901388986336d65dbadf7cd55f2a6bbd/08bdc348bb38258e-1c/s400x600/a67f48d1dbb6ed6b20d5aaf1f35fa098c797e7d3.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Ping_Lacson.html" id="candidate-name">Panfilo 'Ping' Morena <br> Lacson Sr.</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/6b4d6a7cb76eb1bdfae2c46529240c6f/08bdc348bb38258e-6b/s400x600/00c7eb91139c0632f79a4f85463ac3ceb91ba34f.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Bongbong_Marcos.html" id="candidate-name">Ferdinand 'Bongbong' <br> Marcos Jr.</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/1f87c69b6883f292421e907a95a53c64/08bdc348bb38258e-3b/s1280x1920/30cadd337fd90b1ab883829efe7c4cd01c4c77d2.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Ka_Leody_De_Guzman.html" id="candidate-name">Leodigario 'Ka Leody' <br> Quitain de Guzman</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/e918fb69c64c76e285833f4bb18c8670/08bdc348bb38258e-e3/s500x750/dd6e973d87986f3186f21806f1ee58f973b4f8df.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Leni_Robredo.html" id="candidate-name">Maria Leonor 'Leni' <br> Gerona Robredo</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/3ba7a5a4868bacc5284add4dc9fd3a86/08bdc348bb38258e-a8/s400x600/78315a8c400f20b3d2c394829f496868fca1c1f7.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_PRES_Manny_Pacquiao.html" id="candidate-name">Emmanuel 'Manny' <br> Dapidran Pacquiao Sr.</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-banner">
+      <h2>VICE PRESIDENTIAL CANDIDATES</h2>
+    </div>
+
+      <div id="vice-presidential-candidates">
+        
+        <div class="container" id="candidate-box">
+          <img src="https://64.media.tumblr.com/ecd9f9ff0058f8a4060f9ca507894d35/b26129ed4c408d87-21/s500x750/28e56e07c99aa932222cdae79d1f0de1c88933a0.png" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Lito_Atienza.html" id="candidate-name">Jose 'Lito' Livioko <br> Atienza Jr.</a></p></center>
+
+        </div>
+
+        <div class="container" id="candidate-box">
+          <img src="https://64.media.tumblr.com/8a4dd7e5ea180d48f6a2aeee9b8c4b20/b26129ed4c408d87-42/s640x960/8b172f6efbf656f2958597d89410a88ab9e3e184.jpg" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Willie_Ong.html" id="candidate-name">Dr. Willie Tan Ong</a></p></center>
+
+       </div>
+
+       <div class="container" id="candidate-box">
+          <img src="https://64.media.tumblr.com/b0e7f55e7301f9ff3f16ca07357703bd/b26129ed4c408d87-7c/s500x750/030d9b6d6390d36d2a25212076fc04443eefff15.jpg" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Tito_Sotto.html" id="candidate-name">Vicente 'Tito' <br> Castelo Sotto III</a></p></center>
+
+       </div>
+
+       <div class="container" id="candidate-box"> 
+          <img src="https://64.media.tumblr.com/28ba19fd6038b876a88078a77e63dae2/b26129ed4c408d87-44/s400x600/5b400ed129f44697cffc3a69957070ae7cc65fa1.jpg" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Kiko_Pangilinan.html" id="candidate-name">Francis Pancratius 'Kiko' Nepomuceno Pangilinan</a></p></center>
+
+       </div>
+
+       <div class="container" id="candidate-box"> 
+          <img src="https://64.media.tumblr.com/a7a23af91bc4dac628d36edc6e33615e/b26129ed4c408d87-ea/s1280x1920/6cead018bf826cb341d9260e2e8e9699c5ed33d0.jpg" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Walden_Bello.html" id="candidate-name">Walden Flores Bello</a></p></center>
+
+       </div>
+
+       <div class="container" id="candidate-box"> 
+          <img src="https://64.media.tumblr.com/27c017134782619934031a0e4371de68/b26129ed4c408d87-4e/s400x600/8969d1f441ce3649c090528500aaeaf4c55c6aa4.jpg" id="candidate-pic">
+
+          <center><p><a href="PPG_IP_VP_Sarah_Duterte.html" id="candidate-name">Sara Zimmerman <br> Duterte-Carpio</a></p></center>
+
+       </div>
+
+      <div class="container" id="candidate-banner">
+        <h2>SENATORIAL CANDIDATES</h2>
+      </div>
+
+        <div id="senatorial-candidates">
+
+      <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/a39e9468b1eb8dff2b2c92de9e22023f/ed4b7d4ce7b7b0d7-ed/s1280x1920/05955cb17505094700dba97815ee7c7dd80b1070.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Lutgardo_Barbo.html" id="candidate-name">Lutgardo B. Barbo</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/e8ae0a2efd355d8cc1b3d17134f9cd41/114e8b525423aabe-80/s1280x1920/126d6610fbc31453877ea36ce74b87034c809fce.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Loren_Legarda.html" id="candidate-name">Lorna Regina 'Loren' <br> Bautista Legarda</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/d888247c353833a3308ea09d832c66cd/510d43d2fbb73125-9b/s400x600/889e9efa15c6bb1a709c193603715053aada22f6.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Chiz_Escudero.html" id="candidate-name">Francis Joseph 'Chiz' Guevarra Escudero</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/19739c63ab7de6fce4fc4b487798c8a6/114e8b525423aabe-fc/s400x600/66a61c5be8ad63f1883dd4ab6678be7913b8c9fd.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Risa_Hontiveros.html" id="candidate-name">Ana Theresia 'Risa' Navarro Hontiveros-Baraquel</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/7177e3e9a2aeab1865b07d63b54bb975/4eac71c9fcead9c9-a6/s500x750/ae8c97e1769da9bb9c94aaf0a622d5f0a0de05e8.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Raffy_Tulfo.html" id="candidate-name">Rafael 'Raffy' Teshiba Tulfo</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/8b9c7969d9407d1341fe3b75c7936094/510d43d2fbb73125-52/s640x960/79d81a4e9edba6ec3ab2b2476c081b02f78534c1.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_JV_Ejercito.html" id="candidate-name">Joseph Victor 'JV' <br> Gomez Ejercito</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/94bbd20f7df5585170c3b8aa20dc8973/510d43d2fbb73125-ea/s640x960/dfb9936ce831717822a452a2cee540f91f7389c9.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Jinggoy_Estrada.html" id="candidate-name">Jose Pimentel 'Jinggoy' Ejercito Jr.</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/bc539bc2563e37acd1e2f9b9e65dfc9f/510d43d2fbb73125-0d/s1280x1920/7bfaeb3286cf768c7f06d21b56deb1493942c8a0.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Samira_Gutoc.html" id="candidate-name">Samira Ali Gutoc</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/2ec98eabb823fb8e5ac0129ff642cedd/510d43d2fbb73125-42/s400x600/3003ea215844477481441c26cc64e8dd1e30540a.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Larry_Gadon.html" id="candidate-name">Lorenzo 'Larry' <br> Gacilo Gadon</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/2f3d3938133bca3be3240d81c95eb66a/4eac71c9fcead9c9-8c/s640x960/4512f22971db660fb5fa62fe468b55967ac15b1c.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Nur-Ana_Sahidullah.html" id="candidate-name">Nur-Ana 'Lady Ann' <br> I. Sahidulla</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/9394430aff2f513653cad06beef97ad4/4eac71c9fcead9c9-3b/s250x400/365db646271904e29826fcc24ed616d09daffd97.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Mark_Villar.html" id="candidate-name">Mark Aguilar Villar</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/5e77707ded4d9fea52f9736d876414cb/4eac71c9fcead9c9-09/s1280x1920/1ab5c02011d7bb55a5100ebb31b9b45035270220.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Juan_Miguel_Zubiri.html" id="candidate-name">Juan Miguel 'Migz' <br> Fernandez Zubiri</a></p></center>
+
+      </div>
+
+
+      <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/c5911e8d59aba7443a31b9b4895ea407/114e8b525423aabe-e6/s400x600/5ff9be1bd6fec95ea08f26eb693ae8151e572a56.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Leo_Olarte.html" id="candidate-name">Leo O. Olarte</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/fe5d40c52c7ecedc149ea79844410f68/510d43d2fbb73125-b7/s640x960/15a501791409bb156a55b036a27c5727bcff1788.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Manuel_Del_Rosario.html" id="candidate-name">Manuel Monsour Tabib <br> del Rosario III</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/d17d841aedda96d1934cdbfb1f9ae8a9/ed4b7d4ce7b7b0d7-13/s1280x1920/9a1c0deae4b018cddcdc159874b9aeecb530b22f.png" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Herbert_Bautista.html" id="candidate-name">Herbert Constantine 'Bistek' Maclang Bautista</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/106be27b2277509c8e3667018512f147/4eac71c9fcead9c9-a9/s500x750/acbdc741db923a2689c8508dc210f81efeef6881.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Joel_Villanueva.html" id="candidate-name">Emmanuel Joel Jose Villanueva</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/7eec4fe1748ce09f96fdafe06bc03401/114e8b525423aabe-73/s1280x1920/1a6ca6b52c4539cf7473be4c83f84ee62ba12e88.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Bong_Labog.html" id="candidate-name">Elmer 'Bong' Labog</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/8ecc8354fcfc82cb82e573417603b302/510d43d2fbb73125-a2/s400x600/caa4c37c9088e73045752cbe0a81de7e977f2559.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Rodrigo_Duterte.html" id="candidate-name">Rodrigo 'Digong' <br> Roa Duterte</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/5a65a5a1fca41818385c11c2f82ef4fb/ed4b7d4ce7b7b0d7-39/s1280x1920/22302017dd3b9bd81b1a39e88ced930dba5f2697.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Neri_Colmenares.html" id="candidate-name">Neri <br> Javier Colmenares</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/261f0e7f9b498ccebfef6b252b8b9676/510d43d2fbb73125-a3/s500x750/c30194822dbbec6f99fb98a6447e74462f2338f5.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Chel_Diokno.html" id="candidate-name">Jose Manuel Tadeo 'Chel' Icasiano Diokno</a></p></center>
+
+      </div>
+
+     <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/081eb965bcfe80ce58a99d33b7a0d512/ed4b7d4ce7b7b0d7-95/s250x400/74a507da70dfbba4fa2dd235a849465cd17672de.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Arnel_Casanova.html" id="pcandidate-name">Arnel <br> Paciano Casanova</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/96f3cb01c0f5168ca5ec85d9e06dddb6/ed4b7d4ce7b7b0d7-0d/s1280x1920/aabc3507fc8409bccd02037208fbc8186d0501dd.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Jejomar_Binay.html" id="candidate-name">Jejomar 'Jojo' <br> Cabauatan Binay</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/133b2ef05117a975f1dcc7a1e0a5d58d/ed4b7d4ce7b7b0d7-ee/s1280x1920/529f3aa9d43a2e114a44c6936dccf07fda2f0995.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Alan_Cayetano.html" id="candidate-name">Alan Peter <br> Schramm Cayetano</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/be70406021bef0f8b1cee72fb0df89d6/4eac71c9fcead9c9-44/s1280x1920/2ffb8ab8eee6fa980bbf85d0aab4e81149691c97.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Gibo_Teodoro.html" id="candidate-name">Gilberto Eduardo Gerardo 'Gibo' Cojuangco Teodoro Jr.</a></p></center>
+
+      </div>
+
+
+      <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/f4c80dd662c24a78e371d5699ade9ea5/ed4b7d4ce7b7b0d7-c7/s500x750/a8a5e5b9acf5a9dff53f77982c621044ea7f9b1c.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Silvestre_Bello.html" id="candidate-name">Silvestre "Bebot" <br> Bello III</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/1fa0ba31de4fcd444009ddd42980388e/510d43d2fbb73125-63/s400x600/f2ef8a2f0e33bb54ca028a3c63534ee4171a81d3.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Sherwin_Gatchalian.html" id="candidate-name">Sherwin 'Win' <br> Ting Gatchalian</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/547d1dbab57b85a3790d5612e1dccf52/ed4b7d4ce7b7b0d7-c7/s500x750/1fba88ea33a4a59ee963418eb997c342a168c9af.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Leila_De_Lima.html" id="candidate-name">Leila Norma Eulalia Josefa Magistrado de Lima</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/d825380d127b986c4260ee506f038270/4eac71c9fcead9c9-76/s1280x1920/28d61fefe339ca254e54613bffc6e01b035a6b61.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Manny_Piñol.html" id="candidate-name">Emmanuel 'Manny' <br> Fantin Piñol</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/baeb35fbbf45e1d61bbf43d721e02e16/4eac71c9fcead9c9-f4/s1280x1920/cd684b560e74633771cc3a58270a45b4fbc313f6.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Sonny_Trillanes.html" id="candidate-name">Antonio 'Sonny' Fuentes Trillanes IV</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/8a0e26fe139a90c5d482d5dcf6ddbe2c/114e8b525423aabe-b0/s1280x1920/8ee4e3a020643fcdf691d3f97bf8970e7190f9b9.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Alex_Lacson.html" id="candidate-name">Alexander Ledesma Lacson</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/ee06d8beac39f4d0a8db32e77f639deb/ed4b7d4ce7b7b0d7-9e/s1280x1920/d924c4cabf16c2652617fe5368e81c351dc96260.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Teddy_Baguilat.html" id="candidate-name">Teodoro 'Teddy' Brawner Baguilat Jr.</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/d013b83a8121b3cd0d51399c381abe74/510d43d2fbb73125-95/s640x960/a2661addd568b21ceeb0607e9d9be360da39bebb.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Richard_Gordon.html" id="candidate-name">Richard Juico 'Dick' <br> Gordon Sr.</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box"> 
+
+        <img src="https://64.media.tumblr.com/ba59d750f5238120c55f948e61b48e96/4eac71c9fcead9c9-99/s1280x1920/a3bc0899cff85d78f725c4832a1f01b3734c2652.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Harry_Roque.html" id="candidate-name">Herminio 'Harry' Lopez <br> Roque Jr.</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/3dd329cbfe21f12613b4bbdd321b7e73/ed4b7d4ce7b7b0d7-c0/s400x600/46a44c6bdc554bb647affb667b20bcce6bd08392.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Greco_Belgica.html" id="candidate-name">Greco Antonious <br> Beda Banta Belgica</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/4ecf528a30e80573fc34aacff28a2f2d/114e8b525423aabe-8d/s1280x1920/135382bec565411c379ee6299871e2601349f6fa.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Gringo_Honasan.html" id="candidate-name">Gregorio 'Gringo' <br> Ballesteros Honasan II</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/6e919ae05ee1aed72a74cc1e2a5953bf/114e8b525423aabe-9d/s540x810/88fa31ec5dcffd3d79246243732c2622ff0c42d3.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Rey_Langit.html" id="candidate-name">Reynante 'Rey' <br> Magat Langit</a></p></center>
+
+      </div>
+
+      <div class="container" id="candidate-box">
+        <img src="https://64.media.tumblr.com/8e9e854839b8623a4651729c69b17ed6/114e8b525423aabe-80/s250x400/ec81f151d4488eeeae638dd3ff410363090514a0.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Rodante_Marcoleta.html" id="candidate-name">Rodante D. Marcoleta</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/934c3adedad2799890537e10b48a9311/114e8b525423aabe-e5/s1280x1920/56e14c45948ca9e8825616c954a6ad0eabbc73b8.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Robin_Padilla.html" id="candidate-name">Robinhood 'Robin' <br> Ferdinand Cariño Padilla</a></p></center>
+
+      </div>
+
+       <div class="container" id="candidate-box"> 
+        <img src="https://64.media.tumblr.com/6936dbbb3345a00a63ecb55a048df8e7/114e8b525423aabe-aa/s400x600/28824435764c0a6538e83c4aac821fa532eb59b1.jpg" id="candidate-pic">
+
+        <center><p><a href="PPG_IP_SEN_Salvador_Panelo.html" id="candidate-name">Salvador 'Sal' San Buenaventura Panelo</a></p></center>
+
+      </div>
+
+
+    </div>
+
+      </div>
+         <footer>
+            <div class="main-content">
+              <div class="left box">
+              <h2>ABOUT BANGON</h2>
+              <div class="content">
+              <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+              <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+              <div class="social">
+              <h1>AHON</h1>
+              <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+              <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+              <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+              </div>
+              </div>
+            </div>
+
+        <div class="right box">
+        <h2>CONTACT US</h2>
+        <div class="content">
+        <form>
+          <div class="name">
+          <div class="text">Name *</div>
+          <input type="text" name="name" required>
+          </div>
+          <div class="email">
+          <div class="text">Email *</div>
+          <input type="email" name="email" required>
+          </div>
+          <div class="phone">
+          <div class="text">Phone *</div>
+          <input id="phone" type="text" name="phone" required>
+          </div>
+          <div class="msg">
+          <div class="text">Message *</div>
+          <textarea rows="2" cols="25" required></textarea>
+          </div>
+          <div class="btn">
+          <button onclick="validate()">Submit</button>
+          </div>
+        </form>
+        </div>
+        </div>
+        </div>
+         
+        <div class="bottom">
+          <center>
+            <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+          </center>
+          </div>
+      </footer>
+    </div>
+
+</html>

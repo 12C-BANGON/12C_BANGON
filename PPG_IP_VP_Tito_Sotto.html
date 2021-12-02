@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Politics & Governance - Candidate Profile</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #A8A8F0;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 40%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 7%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subbody {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+	#subsub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 15%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+#triplesub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 20%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+#tamanasub {
+		font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 25%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+
+  <body style="background-color: #CBCBF6;"> 
+  <!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/f4293d884ea039a94259a690cd9cdf0e/a1a415a7f9b310aa-3e/s2048x3072/a0cd663df1a54fdbd81d22daa186e5661f49f036.png " alt="candidateprofilebanner" border="0" width="100%"> 
+
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/b0e7f55e7301f9ff3f16ca07357703bd/b26129ed4c408d87-7c/s500x750/030d9b6d6390d36d2a25212076fc04443eefff15.jpg" alt="loren" class="im" id="image">
+      <h2 id="header">
+        Vicente "Tito" Castelo Sotto
+      </h2>
+      <h3 id="header">Running for Senator, Independent</h3>
+      <br>
+      <p id="written"><i>Researched by Megan Sison</i></p>
+      
+
+      <br><br>
+        <p id="subheading"><b>Education</b></p>
+      <br>
+      
+      <p id="body" >
+        1. Bachelor in Arts, English 
+      </p>
+          <p id="subbody">
+            - Colegio de San Juan de Letran – Manila
+          </p>
+
+      <br>
+
+      <p id="body">
+        2. Primary and Secondary School
+      </p>
+          <p id="subbody">
+            - Colegio de San Juan de Letran – Manila
+          </p>
+
+
+        <br><br>
+        <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Accomplishments</b></p>
+      <br>
+
+      <p id="body">
+        1.  Vice-Mayor of Quezon City and the Presiding Officer of the Anti-Drug Abuse Quezon City Council (1988 – 1992)
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Chairman of the Senate Committee on:
+      </p>
+          <p id="subbody">
+            - Tourism (1992 - 1998) 
+          </p>
+          <p id="subbody">
+            - Local Government (1992 - 1998)
+          </p>
+          <p id="subbody">
+            - Assistant Majority Floor Leader (1992 - 1998)
+          </p>
+          <p id="subbody">
+            - Rural Development (1995 - 1996)
+          </p>
+          <p id="subbody">
+            - Youth and Sports Development (1995 - 1996)
+          </p>
+          <p id="subbody">
+            - Joint Oversight on Local Government Code (1996 - 1998)
+          </p>
+          <p id="subbody">
+            - Illegal Drugs (1996 to 1997)
+          </p>
+          <p id="subbody">
+            - Public Services (1998 - 2001)
+          </p>
+          <p id="subbody">
+            - Majority Floor Leader of Commission on Appointments (1998 - 2002)
+          </p>
+          <p id="subbody">
+            - Science and Technology (1999 - 2001)
+          </p>
+
+      <br>
+
+      <p id="body">
+        3. Senator of the 15th Congress in the Republic of the Philippines as of July 1, 2010 to June 30, 2016
+      </p>
+
+      <br>
+
+      <p id="body">
+        4. Senate President of the 15th Congress in the Republic of the Philippines (2018-Present Day)
+      </p>
+
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Advocacies</b></p>
+      <br>
+
+      <p id="body">
+        1. He filed the Senate Bill No. 1505 that led to the enactment of Republic Act Number 8747, entitled “An Act requiring disclosure of Year 2000 statements and readiness of computer-based systems and products” that prepared the country to cope with potential computer viruses
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. He filed a number of Senate Bills addressing the modernization of the telecommunications sector in the country,  like Senate Bill No. 1660 entitled “An Act mandating interconnection between and among public telecommunications entities” and Senate Bill No. 2084 entitled "An Act providing a service area scheme to all internet service providers."
+      </p>
+
+      <br>
+
+      <p id="body">
+        3. Senator Sotto continued his advocacy against the proliferation of illegal drugs by filing several bills, such as Senate Bill No. 383 entitled “An Act creating a Presidential Drug Enforcement Agency” and Senate Bill No. 384 entitled “An Act providing for the inclusion of “methamphetamine hydrochloride” commonly known as “shabu”
+      </p>
+
+
+
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Corruption Cases</b></p>
+      <br>
+
+      <p id="body">
+      No sources were found on the corruption cases filed against Tito Sotto.
+      </p>
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Scandals</b></p>
+      <br>
+
+      <p id="body">
+        1. The Rape Case of Actress Pepsi Paloma       
+      </p>
+          <p id="subbody">
+            - In 1982, a young actress named Delia Dueñas Smith, more commonly known as Pepsi Paloma, accused three men, namely Vic Sotto, Joey De Leon, and Ricardo Reyes, of molesting her and another actress, Guada Guarin, while also claiming she herself was gang-raped.
+          </p>
+          <p id="subbody">
+            - When she took the case to court, Tito Sotto involved himself in the case by convincing her to sign an affidavit of desistance in exchange for a public apology from the three men.
+          </p>
+          <p id="subbody">
+            - In 1985, three years after the incident, Pepsi was found dead, hanging in her bedroom. Her death was ruled as a suicide.
+          </p>
+          <p id="subbody">
+            - Sotto and the others involved in the case claim that the whole endeavor was simply a publicity stunt created by Pepsi’s manager Rey de la Cruz.
+          </p>
+          <p id="subbody">
+            - In more recent years, Sotto requested for the Philippine news outlet the Inquirer to take down a few articles involving him in the case, claiming that the articles shared baseless information that only served to tarnish his reputation.
+          </p>
+          <p id="subbody">
+            - The National Union of Journalists of the Philippines, dissatisfied by this, denounced his actions as they saw it as him attempting to suppress freedom of press and expression.
+          </p>
+
+      <br>
+
+      <p id="body">
+        2.  Allegations of Plagiarism
+      </p>
+          <p id="subbody">
+            - Tito Sotto has been repeatedly accused of plagiarism by a number of people in the past few years.
+          </p>
+          <p id="subbody">
+            - In one case in 2012, Sotto was accused of plagiarizing a portion of one of the blogger Sarah Pope’s articles and using it in a speech where he spoke against the use of artificial contraceptives.
+          </p>
+          <p id="subbody">
+            - He claimed at first that he had not done so, however his staff admitted that a few parts of the post were used, but only as reference.
+          </p>
+          <p id="subbody">
+            - In the same year, he was accused of plagiarizing from a speech of US Senator Robert Kennedy in a speech when delivering an opposition to an RH bill in Filipino. The daughter of the senator demanded a public apology, to which he refused, stating that translation was not plagiarism.
+          </p>
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Family Background</b></p>
+      <br>
+
+      <p id="body">
+        1. Born in Manila, the Capital of the Philippines on August 24, 1948
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Married to  Helen Gamboa, a beauty queen, actress, and singer. Their family consisted of:
+      </p>
+          <p id="subbody">
+            - Four children: Romina, Diorella Maria, Gian Carlo and Ciara
+          </p>
+          <p id="subbody">
+            - Eight grandsons: Romino Vicente, Victorio, Vicente IV, Carlos Edrigu, Alessandro Jose, Marciano, Juan Rossano, and Vincenzo Jose
+          </p>
+          <p id="subbody">
+            - Two granddaughters: Helena and Amaria Jiliana
+          </p>
+
+
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.manilatimes.net/manilatimes/uploads/images/2021/09/28/17702.jpg</p>
+
+      <br>
+
+    </div>
+
+    <footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

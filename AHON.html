@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <title>AHON</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+ a:hover {
+    text-decoration: underline;
+  }
+
+#ahon-full-banner {
+    width: 100%;
+    height: 100%;
+  }
+
+ #what-is-ahon {
+  margin-top: 20px;
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+}
+
+h1 {
+	align-content: center;
+	text-align: center;
+  color: #EC8238;
+	font-size: 65px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#ahon-logo {
+	height: 140px;
+	width: 140px;
+	margin-left: 90px;
+}
+
+#wsc-logo {
+	height: 160px;
+	width: 160px;
+	margin-left: 80px;
+  margin-top: 3px;
+}
+
+#logos {
+	float: left;
+}
+
+#description {
+	font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+	text-align: justify;
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+  line-height: 30px;
+}
+
+#socmed-section {
+	background-color: #398177;
+	padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#insta-feed {
+	width: 300px;
+	height: 500px;
+	margin-left: 150px;
+  margin-bottom: 40px;
+}
+
+#fb-feed {
+	width: 600px;
+	height: 500px;
+	margin-left: 120px;
+  margin-bottom: 40px;
+}
+
+#ig-button {
+  background-color: #EC8238;
+  margin-left: 210px;
+  padding: 15px;
+  font-family: 'Cabin', sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+  border: transparent;
+  border-radius: 30px;
+}
+
+#fb-button {
+  background-color: #EC8238;
+  margin-left: 395px;
+  padding: 15px;
+  font-family: 'Cabin', sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+  border: transparent;
+  border-radius: 30px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#webinar-section {
+  background-color: #FFE7CB;
+  color: #EC8238;
+  align-content: center;
+  padding-top: 40px;
+}
+
+#webinar-header {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+#webinar-link {
+  background-color: #398177;
+  padding: 20px;
+  margin-left: 510px;
+  margin-bottom: 40px;
+  font-family: 'Cabin', sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: transparent;
+  border-radius: 40px;
+}
+
+#webinar-post {
+  align-content: center;
+  width: 500px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+}
+
+ footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+ </style>
+ <script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+     <div class="giant">
+  <body style="background-color: #A4D9D6;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+  </body>
+  </div>
+
+	<img src="https://64.media.tumblr.com/608c0bd31113bd7cda6f0d3b8229dc0b/38df548e54f864e5-55/s2048x3072/591e724b0864504865bf4566ee561858e31576ef.png" id="ahon-full-banner">
+  
+  <div id="what-is-ahon">
+
+  <h1>What is AHON?</h1>
+
+  <div id="logos">
+  <img src="https://64.media.tumblr.com/3bb769cd86aaca3da550c65a0c7bfd1a/848e29b2fa97d74b-d2/s540x810/1c2f932d3c482d8203a033a8f68ec8e6d13f8168.png" id="ahon-logo">
+
+  <br>
+
+  <img src="https://64.media.tumblr.com/7f5fb65e8bbdf618d91810afc3d05098/848e29b2fa97d74b-9b/s2048x3072/bf5a71647d5a9950b57665f44628f759df6d459e.png" id="wsc-logo">
+  </div>
+
+	<p id="description">AHON is a project created by 12C of PAREF Woodrose School. Ahon is the action of moving upward. In other words, it translates to "rise." The goal of the project is to help Filipinos rise above fake news and choose the right political candidates to elevate the country to a better condition.
+
+	<br>
+  <br>
+	<br>
+
+	Ang "AHON" ay proyekto ng  mga mag-aaral sa section 12C ng PAREF Woodrose School. Ang katagang "ahon" ay ang pagkilos mula sa ibaba paitaas. Layunin ng proyektong ito na  maiahon ang mga Pilipino mula sa mga mali o pekeng balita at makatulong sa mga mamamayan sa pagpili ng wastong kandidato sa darating na 2022 national elections. Minimithi ng mga mag-aaral na maiangat ang bayan at masilayan ang matagal na nitong minimithi na magkaroon mabuting pamamalakad o good governance sa pamahalaan</p>
+
+</div>
+
+<div id="socmed-section">
+
+<div id="feeds">
+	<img src="https://64.media.tumblr.com/5a5619862ae1b8876ebcb91e8fee6021/8999473d9af48206-1a/s1280x1920/5e0392866b2d3e89ee0842869e6be90815998f54.jpg" id="insta-feed" alt="This is the AHON Instagram feed.">
+
+	<img src="https://64.media.tumblr.com/ea6117cf2b323e627f50da44ecb2c2d9/8999473d9af48206-7b/s1280x1920/da7f445fff86a9b2bd804964655af5b908409446.png" id="fb-feed" alt="This is the AHON Facebook feed.">
+</div>
+
+<div id="feed-buttons">
+	<button id="ig-button"><a href="https://www.instagram.com/ahon.wr/">AHON Instagram Page</a></button>
+
+	<button id="fb-button"><a href="https://www.facebook.com/ahon.wr">AHON Facebook Page</a></button>
+</div>
+
+</div>
+
+<div id="webinar-section">
+	<h1 id="webinar-header">Missed the live webinar? Click here to watch!</h1>
+
+	<button id="webinar-link"><a href="https://www.youtube.com/watch?v=mxD0tldYpog">AHON: Alamin Ang Totoo, Maging Tapat sa Pagboto</a></button>
+
+  <br>
+
+	<img src="https://64.media.tumblr.com/d51f0c708d01e27e91513fc3fe4f56ba/8999473d9af48206-9b/s1280x1920/8766f60378dd6b67eb58482f9364880ac21e6726.png" id="webinar-post" alt="This is the AHON webinar announcenment post.">
+</div>
+
+</body>
+
+<body>
+
+<footer>
+   <footer>
+      <div class="main-content">
+        <div class="left box">
+        <h2>ABOUT BANGON</h2>
+        <div class="content">
+        <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+        <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+        <div class="social">
+        <h1>AHON</h1>
+        <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+        <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+        <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+        <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+        </div>
+        </div>
+      </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+  </footer>
+</div>
+
+</body>
+
+</html>

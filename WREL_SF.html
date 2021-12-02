@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>World Religions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 90%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+  }
+
+  #ref {
+    font-family: 'Cabin', sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #2c4a4d;
+  }
+
+
+  body{
+    min-height: 100vh;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #worldrel-full-banner {
+    width: 100%;
+    height: 100%;
+  }
+
+  #worldrel-proj-banner {
+    width: 100%;
+  }
+
+  #worldrel-ad-box {
+    background-color: #65B8A8;
+    height: 650px;
+    width: 34%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+  }
+
+  #worldrel-ad {
+    height: 400px;
+    width: 325px;
+    margin-right: 78px;
+    margin-top: 10px;
+    float: right;
+  }
+
+  #worldrel-description {
+    color: #D2EBE6;
+    font-family: cabin;
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 5px;
+    margin: 15px 20px;
+    line-height: 20px;
+  }
+
+
+  #article1-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 75px;
+
+  }
+
+  #article1-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp1 {
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+
+  }
+
+  a {
+    color: #D2EBE6;
+    text-decoration: initial;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #article2-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 75px;
+  }
+
+  #article2-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp2 {
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+
+  }
+
+ #article3-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 75px;
+  }
+
+  #article3-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp3 {
+    font-family: poppins;
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  #article4-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 226px;
+  }
+
+  #article4-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp4 {
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  #article5-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 75px;
+  }
+
+  #article5-pic {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp5 {
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  #duterte-box {
+    background-color: #479A89;
+    height: 270px;
+    width: 230px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 75px;
+  }
+
+  #duterte {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #grp6 {
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+     <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+  </body>
+  </div>
+
+    <img src="https://64.media.tumblr.com/37ea23967587f79bfb7d702fd74b7939/38df548e54f864e5-29/s2048x3072/b3f23a167a9a5b38b139a98d9a55be4745838f47.png" id="worldrel-full-banner">
+
+    <div style="width: 100%;
+          height: 20px;
+          background-color: #488175; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/132303843a7d54d104c8285b66c9f3d5/a1a415a7f9b310aa-fb/s2048x3072/0b027c675a5edf952efdb11e38e85fb8da36c8ae.png" id="worldrel-proj-banner">
+
+    <div style="width: 100%;
+          height: 20px;
+          background-color: #488175; 
+          float: left;">
+    </div>
+
+    <div id="ad">
+
+      <div class="container" id="worldrel-ad-box">
+
+        <strong><p id="worldrel-description">The subjects Introduction to World Religions and Belief Systems (IWRBS) and English for Academic and Professional Purposes (EAPP), challenged students from the Humanities Strand to create feature articles centered on the role of religion in current social and political issues. The goal of this activity was to expose the students to a new style of writing and apply the concepts they have acquired from IWRBS to critically analyze Religion in Society. The students tackled subjects such as radicalism, block voting, and extrajudicial killings, very timely discussions with the nearing 2022 Philippine elections.</p></strong>
+
+        <img src="https://64.media.tumblr.com/9ecfb19e373f1559f10c56d548f005a2/d2118d3e281685f2-0a/s2048x3072/ac56d0576ccbdb9e5822a98f4746d02664d524ca.png" id="worldrel-ad">
+      </div>
+
+    </div>
+
+    <div id="worldrel-articles">
+
+      <div class="container" id="article1-box"> 
+        <img src="https://64.media.tumblr.com/7c4c3bae6af10fcf2d2a4a5bfccd03d1/19df60b677eb9c94-99/s1280x1920/bcf8fd64e38ae811d141b6a9a6a3249ad4439c2d.jpg" id="article1-pic">
+
+        <div><p id="grp1"><a href="">The Box that Unlocks<br>Muslim Choice</a></p></div>
+
+      </div>
+
+      <div class="container" id="article2-box"> 
+        <img src="https://64.media.tumblr.com/0c55acef185f0634014a70fad88d6338/19df60b677eb9c94-ae/s400x600/ff44e5dd82d41e07b7c734af89d2eaca398666b4.png" id="article2-pic">
+
+        <div><p id="grp2"><a href="">The Bearer of the Sword</a></p></div>
+
+      </div>
+    
+      <div class="container" id="article3-box"> 
+        <img src="https://64.media.tumblr.com/53e6dee11a6990422033a63e093a3005/19df60b677eb9c94-ad/s640x960/032ceab4b347d6706e3d1484a5aca8f0a0f21abe.png" id="article3-pic">
+
+        <div><p id="grp3"><a href="">Johnny Smith and the Wonderful<br>World of Political Hiveminds</a></p></div>
+
+      </div>
+
+      <div class="container" id="article4-box"> 
+        <img src="https://64.media.tumblr.com/f9036a93e5de56639c9f92134ac7d4dc/19df60b677eb9c94-e2/s500x750/cfec68d1e9de05dd451cbae27012a841ee1123a2.jpg" id="article4-pic">
+
+        <div><p id="grp4"><a href="">When the Republic's Rebels<br>are Religious</a></p></div>
+
+      </div>
+
+      <div class="container" id="article5-box"> 
+        <img src="https://64.media.tumblr.com/f66fdd84f59107ecacb53ded0b0cb674/19df60b677eb9c94-17/s1280x1920/d36cc7a1e4e09fc987dbeeec8f10c91bb9323bd0.png" id="article5-pic">
+
+        <div><p id="grp5"><a href="">How an 86% Catholic Nation<br>Elected an Anti-Catholic President</a></p></div>
+
+      </div>
+
+      
+  </div>
+   <footer>
+      <div class="main-content">
+        <div class="left box">
+        <h2>ABOUT BANGON</h2>
+        <div class="content">
+        <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+        <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+        <div class="social">
+        <h1>AHON</h1>
+        <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+        <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+        <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+        <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+        </div>
+        </div>
+      </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+  </footer>
+</div>
+
+</html>

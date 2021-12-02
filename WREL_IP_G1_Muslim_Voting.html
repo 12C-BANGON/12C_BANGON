@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>World Religion - Magazine Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 80%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #398177;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/132303843a7d54d104c8285b66c9f3d5/a1a415a7f9b310aa-fb/s2048x3072/0b027c675a5edf952efdb11e38e85fb8da36c8ae.png" alt="worldrelarticlebanner" border="0" width="100%"> 
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/7c4c3bae6af10fcf2d2a4a5bfccd03d1/19df60b677eb9c94-99/s1280x1920/bcf8fd64e38ae811d141b6a9a6a3249ad4439c2d.jpg" alt="iloilo" class="im" id="image">
+      <h2 id="header">Analysis on "The Box that unlocks Muslim Choice"</h2>
+      <br>
+      <p id="written"><i>Written by Ariana Jimenez, Tori Montinola, Patchi Natanauan</i></p>
+      <br> <br>
+      <p id="body" >
+        The raging heat of the sun beats down on the crowd, their red shirts dampening with sweat and sticking to their backs. Amidst the noise, the people watch 2016 candidate Rodrigo Duterte rise from his seat, coming forward to hold the mic on the podium. The roar of the crowd can be heard from across Cotabato City as Duterte raises his fist proclaiming loudly, “I am not Catholic. I am Islam. It is true.” A popular politician among Muslim communities, Duterte won the hearts and votes of Islamic voters across the country despite the Catholic religion that dominates majority circles. This isn’t unlike any other politician that has been favored before. From the values their chosen candidates possess to the almost non-existent representation of Muslims in government, we’ll take a look at what makes the Islamic voter tick.      
+      </p>
+      
+      <br>
+
+      <p id="body">
+        Religion affects the way people live in so many aspects, the way they talk and the way they think. Thus, it's not a secret that it can affect politics as well as the voting behaviors of Muslims. Islamic religion being the second-largest religion in Mindanao based on the result of the 2015 Census of Population entails how their collective votes can contribute to a change in the government. Muslims value their beliefs just like everybody else, and those beliefs are connected to their rights. They desire and demand to have representation in the government because they need someone to reflect and respect their values in the political system. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Throughout time, there has been a strong emphasis on understanding the relationship between religion and politics. Where there is integration between the two, the energies of society get reduced to passiveness. Where there is a conflict between the two, acquiring power over another causes deprivation of social and cultural activities. With that, it can be said that they both affect each other, and cause exclusiveness rather than unity if not negotiated properly. Religion goes beyond the path of honoring higher spiritual beings or recognizing the nature of a spiritual realm. It serves as a framework that can interpret and respond to activities, events, or experiences. Whether or not we do not agree to it, religion will consistently continue to be involved or intervene with the rationality of politics. That is why in a country where the majority of the population are Christians, Muslims feel the need to have a representation in the Philippine government to serve as their voice when it comes to their rights and what they believe in. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        You might probably be familiar with the everyday congressman that frequents government events and visits Malacanang palace, they’ve got a law or business degree, usually come from a powerful family, and are almost certainly Catholic. The 20-year drought of Muslim politicians has certainly been felt by the Muslim minority who comprise barely a sliver of the Philippine population against the 92% Christian majority. Islamic voters are vying for the representation that has been lost to them for more than two decades, their grasp slipping with every election. The Sharia Law, a personal and religious guide in Islam, in turn, prohibits Muslims from voting for candidates that are not Muslim.  The Moro candidates that do rise from the ashes carry with them the values and principles that this minority holds very close to their spiritual hearts. The drive for a voice in the sea of Philippine governance pushes these voters to toss their shot with one of their own.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        Islamic laws in politics can be a very controversial and debatable topic for many. In the eyes of the media, Sharia law consists of stoning, chopping off hands, and honor killing. A barbaric, primitive law that can be a threat for everyone. However, what everyone saw in the media did not affect the wants of Muslim countries. According to Pew Research Center's Global Attitudes Project, many dominant Muslim countries still desire Islamic laws to be implemented in their government, as it was never stated that they strictly want to follow the Quran. They saw the Islam law’s positive influence in politics as its laws follow the values and principles of their religion. Space for diversity and change made by the Islamic law favors Muslims in Mindanao, as it will open to their freedom of expression. Their identity will not be looked at as a criminal or a bandit in their own country, no discrimination against them and a rise for equality. Hence, Muslims chose a representative that can bring a change and can uphold their rights. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        Religion plays an important role in the political system because it is the basis of our rights and beliefs. It is part of our identity. If you think of it that way,  what must Muslims feel when they do not have anyone vouching for them in the political system? When their religion is not being acknowledged in a country where the majority of the people are Christians? They must feel like they are stuck in a path not taken. In a world where equality, diversity, and inclusion are viewed as a necessity for a society to grow, ignoring the demands of Filipino Muslims for representation in the Philippine government is unacceptable. Filipinos should start with choosing the right person to vote for, and they should use that decision to reflect how much they care about the future of the Philippines, and for their fellow citizens. After all, there is always a reason behind every decision.  
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.rappler.com/nation/elections/rodrigo-duterte-maharlika-muslims-vote-mindanao</p>
+
+      <br>
+    </div>
+
+    <footer>
+  <footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

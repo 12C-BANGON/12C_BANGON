@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Politics & Governance - Article Analysis</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+	.cen {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+		margin-top: 3%;
+		width: 70%;
+		background-color: #A8A8F0;
+		padding: 40px;
+	}
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+	#header {
+		font-family: 'Poppins', sans-serif;
+		text-align: center;
+		color: black;
+	}
+
+	#image {
+		width: 80%;
+	}
+
+	#written {
+		font-family: 'Cabin', sans-serif;
+		text-align: center;
+		color: #2c4a4d;
+	}
+
+	#body {
+		font-family: 'Cabin', sans-serif;
+		text-indent: 50px;
+		text-align: justify;
+		color: black;
+		margin-left: 3%;
+		margin-right: 3%;
+		font-size: 17px;
+	}
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 23px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+
+	<body style="background-color: #CBCBF6;"> 
+	<!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/36fe79e44177e68df0ef019d613a8e72/a1a415a7f9b310aa-0c/s2048x3072/9b9c02a229a249306c24f5e6e57a8983021faef6.png" alt="polgovanalysesbanner" border="0" width="100%"> 
+
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/abb598d95122164c7f23de8d5479af4b/5b465f0ca6599b39-8e/s640x960/0cc7d040413a648a2d7c2a7fa55d7e4431aaaae2.png" alt="iloilo" class="im" id="image">
+			<h2 id="header">
+        Analysis on "Sayang": Robredo questions DOH's unused funds amid small "ayuda"; unpaid health workers"
+      </h2>
+			<br>
+			<p id="written"><i>Written by Ally Lopez, Janea Mancia, Tori Montinola</i></p>
+			
+      <br> <br>
+			
+    <p id="body" >
+        As the COVID-19 pandemic continues to ravage economies and healthcare systems worldwide, the Philippines is no exception, struggling particularly as a developing nation. Nations have put particular importance on the medical field, supplying more substantial budgets to ensure the health of their citizens. In this article, Vice President Leni Robredo goes into detail about how the Department of Health (DOH) has been inadequately spending the 67.32 billion pesos allocated to COVID-19 funds, noting the surplus and unused funds. COVID-19 resources are not going where they are needed while the Philippine government insists on receiving loans putting the country deeper in interest receivables. She expressed deep dissatisfaction with this especially considering the current reliance and need for medical care in this pandemic. The urgency of the situation further spurs her annoyance and disappointment stating repeatedly how sad it is.  
+      </p>
+      
+      <br>
+
+      <p id="body">
+        The Philippine government is a democracy. A democracy is defined as a government ruled by the majority, the power placed in its people. In line with its constitution as a democracy, it is a government of the people, by the people, and for the people. This situation highlights the lacking obligation that the government has to serve its citizens especially during a time of crisis. VP Robredo expressed how the government says they do not have funds for better medical equipment or more nurses yet the unused funds in the DOH say otherwise. She also states that these funds could be better used elsewhere such as actually providing health workers with their hazard pay. Additionally, the need to pay hospital bills is still prevalent and unsolved with PhilHealth lacking sufficient funds to do so. This shows great negligence on the part of the DOH. Further, this also violates the democratic stance of transparency. The blatant contradictory lie of “not having enough funds” as well as “unused funds in the DOH” plainly suggests the lack of transparency and accountability when it comes to the government’s management of money. 
+      </p>
+      
+      <br>
+
+      <p id="body">
+        In addition to the Philippines being a democracy, it is also a republic. A republic is a state in which supreme power is held by the people and their elected representatives either from the national government or the local government. The citizens of the Philippines placed their trust and money in the representatives to handle responsibly. The authority that the Department of Health has been entrusted is not being treated with the reverence and importance that it holds by its own officials. The intentional mismanagement shows how the government is betraying the trust that Filipinos have given them to make decisions for their betterment. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        One of the key characteristics of citizenship in a democratic country is that it allows its citizens to realize that they have rights, and they have the power to exercise these rights according to how they see fit. Part of this includes the ability to hold government officials accountable in the event of possible setbacks, therefore requiring said citizens to be active, participative, and aware of current events. With the misallocation of monetary resources and the evident lack of transparency exhibited by the Department of Health, especially at the height of the pandemic, Filipino citizens must voice out these issues. In the end, it is their healthcare and well-being that is concerned, not the reputation and political standing of the authority figures involved. It is still their responsibility to ensure that the government representatives succeed in serving their country.
+      </p>
+
+      <br>
+
+      <p id="body">
+        To conclude, it can be seen that the government’s mismanagement of COVID-19 funds negatively affects the health workers, COVID patients, and the financial integrity of the Philippines. The DOH’s lack of openness on where these funds are being allocated violates the democratic value of transparency; neglecting the needs of the people in times of crisis. In consequence, the trust of the Filipinos is broken and disheartened that the very government officials they choose to serve them are falling short on that promise with their incompetence to allocate the abundant unused funds to where they are needed. That being said, it is up to the citizens to hold these state actors accountable and push for the reforms that are imperative to getting the Philippines through this COVID-19 pandemic. 
+      </p>
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://newsinfo.inquirer.net/1472940/sayang-robredo-questions-dohs-unused-funds-amid-small-ayuda-unpaid-health-workers</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+	</body>
+</div>
+
+</html>

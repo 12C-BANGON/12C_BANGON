@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Politics & Governance - Candidate Profile</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #A8A8F0;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 40%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 7%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subbody {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+	#subsub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 15%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+#triplesub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 20%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+#tamanasub {
+		font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 25%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+
+  <body style="background-color: #CBCBF6;"> 
+  <!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/f4293d884ea039a94259a690cd9cdf0e/a1a415a7f9b310aa-3e/s2048x3072/a0cd663df1a54fdbd81d22daa186e5661f49f036.png " alt="candidateprofilebanner" border="0" width="100%"> 
+
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/d825380d127b986c4260ee506f038270/4eac71c9fcead9c9-76/s1280x1920/28d61fefe339ca254e54613bffc6e01b035a6b61.jpg " alt="loren" class="im" id="image">
+      <h2 id="header">
+        Emmanuel 'Manny' Piñol 
+      </h2>
+      <h3 id="header">Running for Senator, Nationalist People's Coalition</h3>
+      <br>
+      <p id="written"><i>Researched by Bettina Aguirre</i></p>
+      
+
+      <br><br>
+        <p id="subheading"><b>Education</b></p>
+      <br>
+      
+      <p id="body" >
+        1. Development Communication (Bachelor’s Degree) University of Southern Mindanao
+      </p>
+          
+      
+      <br>
+
+      <p id="body">
+        2. Rural and Economic Development (Master’s Degree) University of Southern Mindanao
+      </p>
+
+      <br>
+
+
+       <p id="body">
+        2. Rural Development (Doctorate) University of Southern Mindanao
+      </p>
+
+
+        <br><br>
+        <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Accomplishments</b></p>
+      <br>
+
+      <p id="body">
+        1. He began his career in the media in 1976. He worked as a disc jockey for DXCM, the University of Mindanao's radio station, and as a radio journalist and news writer for DXMS in Cotabato City.
+      </p>
+         
+      <br>
+
+      <p id="body">
+        2. In 1998, he was elected provincial governor of Cotabato, where he served for three consecutive terms. During his stint as governor, he championed a variety of agriculture initiatives, including the Malitubog–Maradugao irrigation project and bottom-up planning for the province's rubber, oil palm, banana, and coconut industries.
+      </p>
+
+      <br>
+      
+      <p id="body">
+        3. Piñol campaigned for Vice Governor of Cotabato and was elected, with his predecessor Vice Governor Jesus Sacdalan taking over as Governor. He is credited with lowering the poverty rate in the province from 41.6 percent in 2000 to 25.6 percent in 2009. He was also well-known for his resistance to President Gloria Arroyo's government's Memorandum of Agreement on Ancestral Domain (MOA-AD) with the Moro Islamic Liberation Front.
+      </p>
+
+      <br>
+
+      <p id="body">
+        4. Piñol served as the Secretary of Department of Agriculture from June 30, 2016 to Aug. 5, 2019 and as Chairman of the Mindanao Development Authority from Aug. 5, 2019 to Oct. 5, 2021.
+      </p>
+
+      
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Advocacies</b></p>
+      <br>
+
+      <p id="body">
+        1. Piñol’s main advocacy is “to help the Filipino farmers and fishermen become more productive while at the same time ensuring food security and economic prosperity in the country.” 
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. According to an interview with the Philippine News Agency, he said, “I am heeding the call of the agriculture and fisheries sector to be their voice in the Senate and to stand up and ensure their well-being against the deluge of anti-agriculture policies and legislations which had made life difficult for them.” 
+      </p>
+
+      <br>
+
+      <p id="body">
+        3. Below is a list of programs and projects which Piñol has established:
+      </p>
+          <p id="subbody">
+            - Greening Mindanao Program
+          </p>
+          <p id="subbody">
+            - Mindanao Water Supply Program
+          </p>
+          <p id="subbody">
+            - Mindanao Fisheries and Aquaculture Development Program
+          </p>
+          <p id="subbody">
+            - Mindanao Bangus and High-Value Fish Offshore Production Program
+          </p>
+          <p id="subbody">
+            - Mindanao Corn Grains Silo Storage System Program
+          </p>
+          <p id="subbody">
+            - Mindanao Sorghum Development Program
+          </p>
+          <p id="subbody">
+            - Bangsamoro Halal Beef Production Program
+          </p>
+          <p id="subbody">
+            - Mindanao Vegetable Production program
+          </p>
+          <p id="subbody">
+            - Taraka Rice Industry Development Program
+          </p>
+          <p id="subbody">
+            - Re-opening and Rehabilitation of Key Industries such as the Pulp and Paper Mill in Bislig City and the Steel Mill in Iligan City
+          </p>
+          <p id="subbody">
+            - Implementation of the Bamboo Industry Development program
+          </p>
+          <p id="subbody">
+            - One-MinDA One-Data Program
+          </p>
+          
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Corruption Cases</b></p>
+      <br>
+
+      <p id="body">
+        1. There were allegations made against Piñol, which stated that he made money from the rice importation deals, following his appointment as head of the National Food Authority (NFA). However, the Presidential Anti-Corruption Commission (PACC) did not find sufficient evidence for this and has cleared him of corruption. 
+      </p>
+
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Scandals</b></p>
+      <br>
+
+      <p id="body">
+        1. Piñol’s handling of the case of 22 fishermen, whose boat was sunk by a Chinese fishing vessel on June 9 while it was anchored near the Reed Bank, came with bribery and intimidation allegations. These rumors came about when boat captain Junel Insigne and his crew changed their tune following a closed-door meeting with the agricultural secretary on June 19 in a venue guarded by police officers dressed in battle gear. Initially, the fishermen maintained that they were deliberately rammed and abandoned by the Chinese. Following that, the fishermen retracted their statements, stating that they were "now confused if their boat was intentionally struck or not."      
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Prior to his resignation as Secretary of the Department of Agriculture (DFA), Piñol faced criticism for the National Food Authority's continuing rice shortages, despite the agency being subordinated to his department, as well as the agriculture sector's poor performance since 2018.        
+      </p>
+
+
+
+      <br><br>
+      <hr>
+
+
+
+      <br><br>
+        <p id="subheading"><b>Family Background</b></p>
+      <br>
+
+      <p id="body">
+        1. He is the second eldest of 11 children born into an immigrant Hiligaynon family from Dingle and Pototan in Iloilo. His siblings include Patricio Piñol, Magpet Mayor Efren Piñol, Cotabato 2nd District Representative Bernardo Piñol, Jr., M'lang Mayor Joselito Piñol, Noli Piñol Sr., Gerardo Piñol, Ferdinand Piñol, Nilo Piñol, Provincial Board member Socrates Piñol, from oldest to youngest.
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. He grew up in the family's rice farm and completed his primary, intermediate and secondary education in M'lang where he was class valedictorian.
+      </p>
+          
+      <br>
+
+      <p id="body">
+        3. Piñol is married to Emily Asentista and they have 3 children: Maria Krista, Josa Bernadette and Bernhart Immanuel.
+      </p>
+
+
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.rappler.com/nation/agriculture-secretary-emmanuel-pinol-resigns</p>
+
+      <br>
+
+    </div>
+
+    <footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

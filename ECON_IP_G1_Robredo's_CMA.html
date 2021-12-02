@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Economics - Magazine Article</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remove margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .giant {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            width: 70%;
+            background-color: #EB8C4A;
+            padding: 40px;
+        }
+
+        .im {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            margin-top: 3%;
+            width: 70%;
+          }
+
+        #header {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+          }
+
+        #image {
+            width: 80%;
+          }
+
+        #written {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: #2c4a4d;
+          }
+
+        #body {
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 17px;
+          }
+
+        #ref {
+            font-family: 'Cabin', sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: #2c4a4d;
+          }
+
+        #subheading {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 19px;
+          }
+
+        #source {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: #CF6B25;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 15px;  
+          }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+	<body style="background-color: #ffcfad;"> 
+	<!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/c4028157c3da9b76a35c7952f2f24b5e/a1a415a7f9b310aa-b1/s2048x3072/e0386ba4f412cce6802c27dc8dbcf5d52a7fb58e.png" alt="econarticlebanner" border="0" width="100%"> 
+
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/ed17186ad331c0a27970fd06b2c9a890/8942c697789632c3-ea/s1280x1920/4de4b84e44aafbfbe7df6d2dfe847edef588a7f5.png" alt="IskoMorenoGAD" class="im" id="image">
+			<h2 id="header">
+        Analysis on "Life Must Go On; Even When The World Ceases To"
+      </h2>
+      <br>
+      <p id="written"><i>Written by Annika Guce, Moira Ibarrola, Kendra Syquia</i></p>
+      
+      <br> <br>
+      
+      <p id="body" >
+        Already juggling with financial instability, tricycle drivers and market vendors face yet another obstacle; securing livelihood amid the SARS-COV-2 epidemic. Vice President Leni Robredo, the founder of the Community Mart, caught wind of transport sectors- mainly tricycle drivers and market vendors in Quezon City, being immensely troubled by maintaining revenue throughout the pandemic. While already financially struggling to earn for their families, these affected transport sectors decided to participate with the Kamuning Tricycle Operators and Drivers’ Association (TODA) in hopes of financial salvation. With more consumers relying on online delivery services and buying their necessities online, VP Robredo aims to help small-time vendors who lack the access to online platforms, as well as tricycle drivers who lost their source of income due to the ECQ.
+      </p>
+      
+      <br>
+
+      <p id="body">
+        During a Facebook live on May 12, 2021, Robredo teamed up with the Kamuning Tricycle Operators and Drivers’ Association (TODA) to launch a community mart that was set in motion due to the economic impact brought about by the COVID-19 pandemic. 
+      </p>
+      
+      <br>
+
+      <p id="body">
+        “When we look closely at the conditions of workers in the informal sector, and daily wage earners- we see how dire the situation is. Even prior to COVID-19 we were already struggling to earn enough living to sustain our daily needs. Now we cannot even go out to do that and we are just waiting for assistance from the government,” lamented informal worker Kathy Regala.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Creating Community Mart to help the partnered drivers and vendors cope with the sudden change caused by the pandemic has proven to be significantly beneficial to these affected vendors as they financially gained from the effects of the program. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        As a matter of fact, on the first day of the Community Mart launch in the Pasig Mega Market, its sales reached up to 71,000 Philippine Pesos. This itself is great progress in helping fellow Filipino citizens, whose livelihood has been affected by the pandemic, in sustaining their means of living.
+      </p>
+
+      <br>
+
+      <p id="body">
+        To ensure that the tricycle drivers who participated in her office’s Community Mart have the basic and necessary skills, Leni Robredo additionally provided a five-day basic motorcycle preventive maintenance training that was done in partnership with Technical Education and Skills Development Authority (TESDA).
+      </p>
+
+      <br>
+
+      <p id="body">
+        “The Office of the Vice President has been providing capacity building training for Community Mart tricycle drivers and market vendors to alleviate poverty,” a statement from the OVP said. “We wish in this training that our partner drivers will be developed more. May those who participate (apply what they learned) in their daily livelihood,”.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Sonny Ambrocio, one of the Kamuning TODA drivers who completed the training, thanked Robredo for initiating projects that would support the livelihood of food delivery riders and motorcycle drivers amid the ongoing pandemic.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Robredo did not only focus her project in Quezon City but was also able to reach the people working in the Mega Market located in Pasig City.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Leni Robredo, alongside Vico Sotto, visited the Pasig Mega Market where Community Mart was launched. The Vice President was given the opportunity to observe the current operations of the market and to see the people who she helped through this project during the time of the Enhanced Community Quarantine (ECQ).
+      </p>
+
+      <br>
+
+      <p id="body">
+        “A big thank you to Mayor Vico and his colleagues at the Pasig LGU for welcoming us today — as well as to the Pasigueños who enjoyed our service. Indeed, more things become possible when we work together, especially with the aim of improving the lives of our countrymen. ” said by Leni Robredo
+      </p>
+
+      <br>
+
+      <p id="body">
+        The COVID-19 pandemic has not only taken a toll in the Philippines but around the world as well which has undeniably changed the lives of many. However, despite the cease in the economy, one thing is certain, life still goes on. The establishment of the Community Mart App is not only an exemplary sample but an ethical demonstration of how to move forward amid the still on-going global epidemic. It has been proven that this collaborative project was able to be a helping hand to the tricycle drivers and market vendors residing in Quezon City. Hopefully, with time and more users, Community Mart will be able to support other vendors around the country struggling to get back up on their feet. As it surely was a step in the right direction, these financially unstable tricycle drivers and market vendors are now capable of earning more wages than when the pandemic first started, to support their businesses and families which puts a smile on their faces and an evident feeling of gratitude.
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://politics.com.ph/after-pasig-success-robredo-getting-ready-for-online-palengke-expansion-in-muntinlupa1/</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+	</body>
+
+</html>

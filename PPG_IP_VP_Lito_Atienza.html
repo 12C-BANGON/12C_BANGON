@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Politics & Governance - Candidate Profile</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #A8A8F0;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 40%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 7%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subbody {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+
+  <body style="background-color: #CBCBF6;"> 
+  <!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/f4293d884ea039a94259a690cd9cdf0e/a1a415a7f9b310aa-3e/s2048x3072/a0cd663df1a54fdbd81d22daa186e5661f49f036.png " alt="candidateprofilebanner" border="0" width="100%"> 
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/ecd9f9ff0058f8a4060f9ca507894d35/b26129ed4c408d87-21/s500x750/28e56e07c99aa932222cdae79d1f0de1c88933a0.png " alt="lito" class="im" id="image">
+      
+      <h2 id="header">
+        Jose "Lito" Atienza
+      </h2>
+      <h3 id="header">Running for Vice President, PDP-Laban/PROMDI/PCM Alliance</h3>
+      <br>
+      <p id="written"><i>Researched by Cristina Claparols</i></p>
+      
+
+      <br><br>
+        <p id="subheading"><b>Education</b></p>
+      <br>
+      
+          <p id="body" >
+            1. Bachelor of Science in Architecture, University of Santo Tomas
+          </p>
+
+        <br><br>
+        <hr>
+
+      <br><br>
+        <p id="subheading"><b>Accomplishments</b></p>
+      <br>
+
+      <p id="body">
+        1. Deputy Speaker, House of Representatives (2020 - present)
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Buhay party-list representative (2013 - present)
+      </p>
+        <p id="subbody">
+              - House Bill 1108 to reorganize the Department of Education into the Department of Education, Culture, and Sports. This aims to strengthen the sports and cultural training among the youth. (2019)
+            </p>
+          <p id="subbody">
+              - “Pilipino Milyonaryo” Bill, or House Bill 1107, which incentivises the elderly to live until the age of 101 to be able to share a P1 million peso grant.
+            </p>
+          <p id="subbody">
+              - House Bill 3839, to avoid airing foreign series or teleseryes from being shown during prime time (6PM - 10PM). This sought to combat the issue of Filipino-made films being pushed into unfavorable time slots for airing. (2014)
+            </p>
+          <p id="subbody">
+              - House Bill 3840, an amendment to Republic Act 9167, which aims to provide a 5-year tax holiday for the local film industry. This aims to help local filmmakers recover and grow more competitive. (2014)
+            </p>
+
+          <br>
+
+      <p id="body">
+        3. Secretary, Department of Environment and Natural Resources (2007 - 2009)
+      </p>
+        <p id="subbody">
+              - Ordered the dismantling of illegal fish pens in Laguna de Bay (2008)
+            </p>
+    
+        <br>
+
+      <p id="body">
+        4. Manila Mayor (1998 - 2007)
+      </p>
+        <p id="subbody">
+            - Developed the Buhayin ang Maynila program 
+          </p>
+
+      <br>
+
+      <p id="body">
+        5. Manila Vice Mayor (1992 - 1998)
+      </p>
+        <p id="subbody">
+            - Set up an orphanage called Home for the Angels for abandoned babies (1995)
+          </p>
+
+      <br>
+
+      <p id="body">
+        6. Manila Assemblyman (1984 - 1986)
+      </p>
+      
+      <br>
+
+      <p id="body">
+        7. Established the <i>Mahal Ko si Lolo, Mahal Ko si Lola </i> foundation 
+      </p>
+      
+      <br><br>
+      <hr>
+
+      <br><br>
+        <p id="subheading"><b>Advocacies</b></p>
+      <br>
+
+      <p id="body">
+        1. Wants to abolish ineffective government agencies and support cooperatives that can allow for economic recovery and better pandemic responses. (2021)
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Objected to the passing of a bill allowing absolute divorce in the country. (2021)
+      </p>
+
+      <br>
+
+      <p id="body">
+        3. Managed a program called Buhayin ang Maynila 
+      </p>
+      
+      <br><br>
+      <hr>
+
+      <br><br>
+        <p id="subheading"><b>Corruption Cases</b></p>
+      <br>
+
+      <p id="body">
+        1. In 2011, was sued for a P4.5-billion plunder case due to the allegedly overpriced dredging project at the Pasig River
+      </p>
+      
+      <br><br>
+      <hr>
+
+      <br><br>
+        <p id="subheading"><b>Scandals</b></p>
+      <br>
+
+      <p id="body">
+        1. In 2015, it was admitted by Manila that a 2000 ordinance that was issued by Atienza violated women’s reproductive health rights. EO 003 showed to discourage the use of artificial methods of contraception, while EO 030 implemented a ban from funding modern contraceptives.     
+      </p>
+
+          <br>
+
+      <p id="body">
+        2. In 2001, started a program to build the City College of Manila on historical botanical gardens. Conservationists who disapproved of the project insisted that construction could destroy the site.    
+      </p>
+
+      <br>
+
+      <p id="body">
+        3. In 2000, Atienza was credited for ordering the demolition of the Manila Jai Alai Building, despite its historical significance that sparked a strong opposition against the destruction. 
+      </p>
+
+
+      <br><br>
+      <hr>
+
+      <br><br>
+        <p id="subheading"><b>Family Background</b></p>
+      <br>
+
+      <p id="body">
+        1. Married to Ma. Evelina Ilagan
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Father of Arnold Atienza and Kim Atienza
+      </p>
+
+      <br>
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.cnn.ph/.imaging/mte/demo-cnn-new/750x450/dam/cnn/2017/12/14/lito-atienza-the-source_CNNPH.png/jcr:content/lito-atienza-the-source_CNNPH.png</p>
+
+      <br>
+
+    </div>
+
+    <footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

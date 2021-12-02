@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Economics - Magazine Article</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remove margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .giant {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            width: 70%;
+            background-color: #EB8C4A;
+            padding: 40px;
+        }
+
+        .im {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            margin-top: 3%;
+            width: 70%;
+          }
+
+        #header {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+          }
+
+        #image {
+            width: 80%;
+          }
+
+        #written {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: #2c4a4d;
+          }
+
+        #body {
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 17px;
+          }
+
+        #ref {
+            font-family: 'Cabin', sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: #2c4a4d;
+          }
+
+        #subheading {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 19px;
+          }
+
+        #source {
+            font-family: 'Cabin', sans-serif;
+            color: #CF6B25;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 15px;  
+          }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+  <body style="background-color: #ffcfad;"> 
+  <!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+   <img src="https://64.media.tumblr.com/c4028157c3da9b76a35c7952f2f24b5e/a1a415a7f9b310aa-b1/s2048x3072/e0386ba4f412cce6802c27dc8dbcf5d52a7fb58e.png" alt="econarticlebanner" border="0" width="100%">
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/dd58cbd8d3f161b20579203a7877fd3e/8942c697789632c3-19/s640x960/e09078f6f1f6948a4a76f4996184b7ea61027a5f.jpg" alt="iloilo" class="cen" id="image">
+      <h2 id="header">
+        There is not just one route to a destination.      
+      </h2>
+      <br>
+      <p id="written"><i>Written by Carmela Dioko, Camille Duran, Carina Gutierrez</i></p>
+      
+      <br> <br>
+      
+      <p id="body" >
+       You wake up at 5 AM and run down the stairs to start getting ready. You smell the lingering fragrance of the cooked rice, eggs, and bacon prepared by your mom for breakfast. You eat, brush your teeth, put on your school uniform, and set up your things for online classes. The clock sings tick-tock, tick-tock, and tick-tock throughout your full day of online classes. After drowning in all the synchronous and asynchronous classes and the seemingly endless number of tasks, you finally reach the end of your day. This day seems pretty normal, right? 
+      </p>
+      
+      <br>
+      <p id="body">
+        Reality strikes at some point, and we realize that this repetitive and tiring schedule is both a blessing and a privilege. In a world where most people believe that the only path to success and prosperity is through formal academic education — for most people, it is their dream to be in your shoes. It is their dream to be in your position and worry about all the deadlines and papers to write. It is their dream to be in school to help them get a job to provide for their families. With the ongoing pandemic and unwillingly being confined in a four-walled structure that we call home, it has been made harder for those Filipinos who are out-of-school youth and unemployed to accomplish the first few steps to achieve prosperity: to have a proper education.
+      </p>
+
+      <br>
+      <br>
+
+      <p id="subheading"> Another Way? </p>
+
+      <br>
+      <br>
+
+      <p id="body">
+
+        Fueled by hunger, the need for work, as well as lack of access, thousands upon thousands of young people are left with neither a job nor the opportunity to be studying like their other peers. This number has only ballooned during the pandemic.
+
+      </p>
+      
+      <br>
+
+      <p id="body">
+        YouthWorks PH, an initiative launched in 2018 by the Philippine Business for Education (PBEd) and funded by the United States Agency for International Development (USAID), has identified this problem and created a five-year program that would help harness the potentials of these young people, providing them not only the training they need but the allowance and resources to do so. During the pandemic, this partnership was furthered with the help of the Office of the Vice President in a P6.6 million commitment, under its BayaniHanapbuhay program, dubbing the initiative as TrabaHope. This allowed YouthWorks to accommodate the growing number of unemployed and Out of School Youth until the end of 2020.
+      </p>
+
+      <br>
+
+      <p id="body">
+       The program is a relatively new one, launched only three years ago. And yet, numerous organizations, offices, and people have formed partnerships to champion the cause. None other than the OVP of the Philippines, whose name has been fluttering about throughout the media and the Filipino citizens as she has just filed for her candidacy for President on Thursday, October 7, is one of these. Her office committed to the collaboration back in October 2020 to support this free technical-vocational training program. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        Walter Annenberg, the former United States ambassador to the United Kingdom, once said that “the greatest power is not money power, but political power.” With both, Vice President Robredo certainly puts them to good use in this partnership. $340,000, about 17 million Philippine pesos from the Office of the Vice President and PBEd and USAID combined, covered all costs for training for the participants of the program until the end of 2020. It was used for the participants’ daily allowance, welcome kits, hands-on materials, data allowance and pre-employment support, learning devices, etc., provided by YouthWorks PH.
+
+      </p>
+
+      <br>
+      <br>
+
+      <p id="subheading"> Does YouthWorks <i>‘work’?</i> </p>
+
+      <br>
+      <br>
+
+      <p id="body">
+        Those who benefited from their program have been able to share their personal experiences in YouthWorks PH and speak candidly about how it has aided them. “This program has helped me a lot because it taught me how to answer a lot of questions, which will be useful for me in the future. I would like to thank the FTW (Flexible Training for Work) team for this program because not only does it help the youth, it also helps their parents, who also learn from the knowledge taught by the program. Because of FTW, the youth have something to do, especially right now that we are in a pandemic. I hope you can help more young Filipinos.” Numerous other youths have testified to the program’s benefits; you can scroll through the Facebook page and notice the number of testimonies in the publication materials and videos posted and even in the comments section of their posts. 
+
+      </p>
+
+      <br>
+
+      <p id="body">
+        But more than their image on social media, albeit this being an important one in the era of connectivity, it’s also significant to look at YouthWorksPH in a more economical and analytical way to see if this program is really effective. 
+
+      </p>
+
+      <br>
+      <br>
+
+      <p id="subheading"> Why YouthWorks? </p>
+
+      <br>
+      <br>
+
+      <p id="body">
+        Researchers from the Philippine Institute for Development Studies found that not many Technical Vocational Education (TVET) programs provided by private institutions provide both tuition and allowance. However, the need for daily allowance for food and transportation is highly crucial for those targeted by these programs, as they are generally from low to middle-income families. Making learning possible does not only mean helping provide tuition, but giving students the means to attend their classes and to get through their school days. In a series of recommendations, the researchers also discussed the need for trainers with current knowledge of the industries they specialize in as there is a perceived lack of this among trainers and assessors in TVET programs. Another factor identified was how it is critical for programs to communicate with government departments such as the Department of Trade and Industry and the Department of Labor and Employment in order to ensure that the needs of stakeholders are being met through the initiative and that the program is providing practical and applicable solutions.
+      </p>
+
+      <br>
+
+      <p id="body">
+        YouthWorks has utilized these essentials in creating a program for the development of the youth, and has even gone beyond, sourcing not only trainers, but mentors for the participants with experience in distance learning in order to match the current modifications that have been made during the pandemic too. This has largely been made possible through the program’s collaboration with TESDA. “This partnership brings us one step closer in co-developing solutions that align education and training to national competitive needs to enable people to get the right jobs,” explains PBEd Executive Director Love Basillote. And through continued partnerships with numerous other agencies and organizations, the program’s scope is widened to further improve its effectiveness. Teaming up with Philippine Cable and Telecommunications Association Inc. (PCTA) and canned goods producer Permex in March 2021 to reach out to more youth in the rural areas, especially in the CALABARZON region and Zamboanga City, and in September 2021, with Yes Pinoy Foundation (the organization founded by renowned actor and youth advocate Dingdong Dantes) to set up a Delivery Service Riders Training Program, especially since courier services have had a substantial growth due to the pandemic — it’s clear that YouthWorks is really getting youth to work. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        Basic macroeconomics teaches that it is crucial to invest in the education and training of youth if the economy is to survive and thrive. With well-qualified workers, the country’s labor force only solidifies. Laborers with improved skill sets earn more and spend more, hence circulating more money in the economy. The continued forging of partnerships and reporting of success stories of trainees under the program are testament to the belief of YouthWorks and all its partners in the role of the youth in the development of the nation. As they continue to invest in technical vocational training for youth, the destination of success becomes one that any young Filipino can dream of and work towards, not through merely one road but also through other paths paved by those who see their potential.
+
+      </p>
+
+      <br>
+      <br>
+
+      <p id="subheading"> More Than One Route </p>
+
+      <br>
+      <br>
+
+      <p id="body">
+        There is not just one route to a destination. Although the paths to a certain destination may differ, some may be smooth, while some may be a little rocky, they all may lead to the same end. These out-of-school and unemployed Filipinos may not have received a proper education. However, this has not stopped them from dreaming and taking on the journey to prosperity. Now, they get to wake up at 5 AM and start to get ready. They smell the lingering fragrance of food prepared for breakfast. They eat, brush their teeth, put on their OJT uniform and set up their things. The clock sings tick-tock, tick-tock, and tick-tock throughout their full day of online training.
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.manilatimes.net/2020/10/22/latest-stories/breakingnews/robredo-office-launches-p17m-training-program-for-out-of-school-youth/784016 
+      </p>
+
+      <br>
+
+    </div>
+
+    <footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Phone *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+  </body>
+
+</html>

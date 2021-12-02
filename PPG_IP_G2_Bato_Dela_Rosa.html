@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Political Governance - Article Analysis</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+	.giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #A8A8F0;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 80%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+	<div class="giant">
+  <body style="background-color: #CBCBF6;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+          <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/36fe79e44177e68df0ef019d613a8e72/a1a415a7f9b310aa-0c/s2048x3072/9b9c02a229a249306c24f5e6e57a8983021faef6.png" alt="polgovanalysesbanner" border="0" width="100%"> 
+
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/8053e7f17fc43bb16a761a422eec31ab/5b465f0ca6599b39-86/s1280x1920/704f6638207e82563d6155c29d724ff1cb1eaef9.jpg" alt="bato" class="im" id="image">
+			<h2 id="header">
+        Analysis on "Bato on ABS-CBN shutdown, alleged abuses: What is 11,000 losing jobs?"
+      </h2>
+			<br>
+			<p id="written"><i>Written by Maria Jose Barrientos, Jenn Keona Beatrice N. Cardeno, Cristina Dominique T. Claparols
+</i></p>
+			
+      <br> <br>
+			
+      <p id="body" >
+			 On the eighteenth of February, Sen. Dela Rosa discussed his stance on the ABS-CBN shutdown during a chance interview. He had expressed that the 11,000 employees who could lose their source of income through the company shutdown have less of a significance compared to the overall Filipino population. Through the analysis of the entirety of his response, we discovered that his claims are not in line with some concepts of the Philippine democratic system that include Liberalism, the respect for Rule of Law, and good governance. 
+
+			</p>
+			
+			<br>
+
+			<p id="body">
+				First, Sen. Dela Rosa showed that his actions were not parallel with democracy’s fruit of good governance. Good governance entails that the government must exhibit efficiency, responsiveness, and transparency. In relation to a particular segment in the interview, the senator should have been able to clearly cite the supposed abuses that ABS-CBN partook in, therefore pushing him to be against the company. He had said, afterall, that there is a “need for a congressional probe to determine whether the network's economic contributions outweighed possible "abuses" it allegedly committed against the public” (Domingo, 2020). However, it was stated in the article that he was not able to verify to the public the concrete crimes that the news network committed (2020). With that said, it is impossible for the people to know whether his stance is based on solid evidence.
+
+			</p>
+			
+      <br>
+
+      <p id="body">
+        Second, Sen. Dela Rosa did not respect the freedom of speech that ABS-CBN rightfully has as a member of the press, according to the Bill of Rights—more specifically, Article III, Section 4 of the 1987 Constitution (Official Gazette, n.d.) The franchise has the right to disseminate information freely to the public, so Senator Dela Rosa should not be biased against them since they were criticized by President Duterte, who the senator is biased for. The Bill of Rights also protects employees from unfair treatment from the national government. This includes being secured from having their company shutdown and losing their source of income. Sen. Dela Rosa’s disregard for the 11,000 employees who will lose their job and income is unconstitutional because their rights should be protected. Liberalism states that the freedom of individuals should be secured from anyone who tries to limit it, including the government, so shutting down a media franchise that aims to spread news is disrespecting press freedom. It limits Filipinos from receiving daily news about important issues in the country, so Dela Rosa should not refuse to see the impact of the ABS-CBN shutdown.
+
+      </p>
+
+      <br>
+
+      <p id="body">
+        Finally, in Sen. Dela Rosa’s response, he said "Hindi ako plastic na magsabing wala akong bias. Totoong tao ako na magsabi na may bias ako towards the president," which reaffirmed his bias towards the president and the reason for his push to shut down ABS-CBN (Domingo, 2020). President Duterte, an avid critic of the company, had already made it clear earlier in his term that he would close the channel (CNN, 2020). Dela Rosa also claimed that If the company violated the law, why would the government renew the franchise (Domingo, 2020). The Philippine constitution is the highest law of the land meaning the government is a government of law and not of men. Dela Rosa vouched for his assumptions and the president’s opinion which is contradictory to the Rule of Law. The attacks against the company must have been based on proven violations of the law rather than the opinion of the President which does not hold absolute power under the constitution.
+      </p>
+
+      <br>
+
+      <p id="body">
+        In conclusion, Sen. Dela Rosa did not uphold the notion and ideas of democracy with his responses to the interview. He should have been more sensitive to the needs and concerns of the workers of ABS-CBN since it would be a great loss for them and their loyal audience who rely on them for updates on important events in the country. It would have been more ideal if the senator showed respect towards the arguments of the news network and by allowing the latter to exercise their freedom of speech. He also should have not let bias towards the President cloud his perspective on the matter. As a member of the government, it is his utmost duty to uphold the common good and listen to the Filipino citizens he insists on serving. 
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: http://news.abs-cbn.com/news/02/18/20/bato-on-abs-cbn-shutdown-alleged-abuses-what-is-11000-losing-jobs?fbclid=IwAR3jZlstjjVHYV9THZOYIAou9Wd6pEQAqdXIOPYimtBxqeYACXeoYh3cj2s</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+	</body>
+
+</html>

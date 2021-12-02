@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+  <title>World Religion - Magazine Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 80%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #398177;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/132303843a7d54d104c8285b66c9f3d5/a1a415a7f9b310aa-fb/s2048x3072/0b027c675a5edf952efdb11e38e85fb8da36c8ae.png" alt="worldrelarticlebanner" border="0" width="100%"> 
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/f9036a93e5de56639c9f92134ac7d4dc/19df60b677eb9c94-e2/s500x750/cfec68d1e9de05dd451cbae27012a841ee1123a2.jpg" alt="iloilo" class="im" id="image">
+      <h2 id="header">Analysis on "When The Republic’s Rebels are Religious"</h2>
+      <br>
+      <p id="written"><i>Written by Louise Alcaraz, Sarah Deakin, Cheska Sto. Domingo</i></p>
+      <br> <br>
+      <p id="body" >
+        "We knock on the consciences of those who kill even the helpless, especially those who cover their faces, to stop wasting human lives. The illegal drug problem should not be reduced to a political or criminal issue. It is a humanitarian concern that affects all of us."      
+      </p>
+      
+      <br>
+
+      <p id="body">
+        Assuming the person behind this quote is a religious leader wouldn’t be the immediate conclusion that the majority would make. After all, protest signs and rallies aren't usually the first images that would pop into anyone’s mind when thinking about the Catholic Church. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Cardinal Tagle, who is the former Manila Archbishop and the man who made this powerful statement, is only one of the many leaders of the Catholic Church that have been vocal about their denunciation of the extrajudicial killings in the Philippines. Given the fact that the country is a predominantly catholic one, 81 percent of the religion’s population as of 2021, to be exact, conflict was always bound to ensue. From July 1, 2016 to May 31, 2021, 6,147 people have been killed due to extrajudicial killings. Although other groups in society such as Human Rights Activists have been expressive about their opposition towards extrajudicial killings, the Philippine Catholic Church has been particularly indignant.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Ever since the Philippines has been put under the Duterte Administration in 2016, the violent act against EJK and war on drugs have been seen as a humanitarian concern in the country. The war on drugs is referred to as a Philippine government policy in order to stop illegal drug problems in the country. (Human Rights Watch, 2018) On the other hand, EJK, according to Pulse Asia, is defined as the killing done by people who are in or given authority, such as the police and soldiers but do not follow the law. This said campaign has led to over six thousand arbitrary killings, and these were mostly done during raids and sting operations.       
+      </p>
+
+      <br>
+
+      <p id="body">
+        With an estimation of two kills per day, the Philippine Drug Enforcement Agency (PDEA) calculated a total of 6,165 deaths caused by the war on drugs since 2016 (Lalu, 2021). This sum, however, does not take the deaths of thousands of other suspects into account. The PDEA has also stated that fatalities due to extrajudicial killings have gone up 50 percent during the pandemic. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        During these attacks and killings, the Catholic Church has made their clear stand about this humanitarian issue on EJK and War on Drugs. Spokesperson of the Catholic Bishops Conference of the Philippines (CBCP), Fr. Jerome Secillano concluded in an ABS-CBN interview done in 2017 that the Catholic Church remains to welcome everyone but they are not seeking anyone who is involved in drugs or witnesses. This is because they do not defend any drug addict nor do they defend police who actively take part in arbitrary killings for the war on drugs. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        To start, why exactly are Filipino Catholics protesting against extrajudicial killings? Ethics and morals could easily be mentioned as a reason for this, but the clear-cut beliefs that come with the Catholic moral code, or in Catholic terms, The Ten Commandments, also play a huge factor. Exodus 20:13 or the fifth commandment, clearly states: “Thou shalt not kill.” Catholics believe that The Ten Commandments were given directly from God, delivered by Moses, for people to live by. Thus, it is no surprise that Catholics are fiercely against extrajudicial killings. The idea of Common Good is also found in Catholic teachings, which points to the respect towards rights and responsibilities of people. This is why, though it is secular, Catholic views align with the Universal Declaration of Human Rights, an international document drafted by the United Nations that aims to protect the freedom and dignity of the human person.
+      </p>
+
+      <br>
+
+      <p id="body">
+        As a result of this issue, multiple Catholic representatives have voiced out their opinions and concerns on the matter. Despite their hesitation in getting involved in politics, the head of the Catholic Church in the Philippines stated that this is no longer considered a criminal issue, but rather a humanitarian concern. Although the Catholic Bishops Conference of the Philippines has tackled the moral panic regarding drug use in the past, they have still made it very clear that above all, human rights should be taken seriously and this problem should be handled differently. Another concern of the church is that this war on drugs is “anti-poor”, since it mainly targets indigent communities. Because of this, the CBCP believes that lawmakers and government officials should reevaluate their laws and policies surrounding this subject.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        Drug-related killings in the country have spiked ever since the ongoing anti-drug campaign during the Duterte Administration. The government and police have been reported to have done these killings to those who are suspected and confirmed to be involved in drugs as their target is to end the drug war as soon as possible. With that, The United Nations has heavily criticized the administration saying in numerous reports that there was a rise to the level of incitement to violence and that there is a near impunity for human rights violations. However, the state’s response to these criticisms about the anti-drug campaign were that they reject the allegations of their arbitrary killings by admitting to only convicting a few murders despite thousands of killings that have been reported. This was said during the President’s State of the Nation Address back in 2018, when he said and quoted, “My only sin is extrajudicial killings.” Furthermore, the state has blocked independent groups and the media to further investigate these killings during the anti-drug campaign. The state has been ordered to disclose information regarding arbitral killings to the commission of human rights (CHR) and could not be exposed to the public unless ordered by the President. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        Fulfilling the obligations as a citizen and a Catholic are two different things. The duty of a Filipino citizen is to uphold the constitution, obey the laws that are implemented and contribute to the state’s development and welfare, while the duty of a Catholic is to live the Christian life, participate in the sacraments and accept and preach the teachings of Christ and the Church. However, there is a possibility that we can be both a good Filipino citizen and Catholic and that is to apply the Catholic Social Teachings to help make decisions for the common good or what is best for the people and the country. These values do not only make us actively engage in the community but we also make use of our religious freedom.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Whether you are with the Filipino Catholics or not, there’s no denying that there has been a lack of government action. When the killings are mentioned, religion barely  comes up. When it does, however, it usually comes with wrath and threats of violence from President Duterte. Of course, this is problematic, as the Philippines is a predominantly Catholic country, which means that the government isn’t listening to the majority of the population.      
+      </p>
+
+      <br>
+
+      <p id="body">
+        Overall, this war on drugs is a pressing issue that demands the attention of everyone, even those from religious backgrounds. As the CBCP calls us to “work together to solve the drug problem and work for the rehabilitation of drug addicts,” we can use this to work together to come up with a solution to these problems. Finding the balance between your personal choice to choose what is right and choosing what is right based on your religion can be hard, but there is one thing we can all agree on and that is protecting everyone’s human rights. 
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://metromanila.politics.com.ph/2017/11/05/anakpawis-expresses-support-church-led-prayer-rally-versus-ejks1/</p>
+
+      <br>
+    </div>
+
+    <footer>
+  <footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Politics & Governance - Article Analysis</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+	.cen {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+		margin-top: 3%;
+		width: 70%;
+		background-color: #A8A8F0;
+		padding: 40px;
+	}
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+	#header {
+		font-family: 'Poppins', sans-serif;
+		text-align: center;
+		color: black;
+	}
+
+	#image {
+		width: 80%;
+	}
+
+	#written {
+		font-family: 'Cabin', sans-serif;
+		text-align: center;
+		color: #2c4a4d;
+	}
+
+	#body {
+		font-family: 'Cabin', sans-serif;
+		text-indent: 50px;
+		text-align: justify;
+		color: black;
+		margin-left: 3%;
+		margin-right: 3%;
+		font-size: 17px;
+	}
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+  <body style="background-color: #CBCBF6;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/36fe79e44177e68df0ef019d613a8e72/a1a415a7f9b310aa-0c/s2048x3072/9b9c02a229a249306c24f5e6e57a8983021faef6.png" alt="polgovanalysesbanner" border="0" width="100%"> 
+
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/66e61efa79e6465ccf5e9106ee6a50d0/5b465f0ca6599b39-91/s500x750/1dd7dda4be1b29007cf131a73f6d44c87e54c54e.jpg" alt="iloilo" class="im" id="image">
+			<h2 id="header">
+        Analysis on "Ilo-ilo soars in 2020 amid global health pandemic"
+      </h2>
+			<br>
+			<p id="written"><i>Written by Bettina Aguirre, Louise Alcaraz, Nikki Bae</i></p>
+			
+      <br> <br>
+			
+      <p id="body" >
+				Iloilo is a good example of exemplary governance, given its current state. The city shows the effects of a properly executed democratic system, and the potential of the country if the system were effective nation-wide. This is why Iloilo is an excellent case of a good democratic system. For example, the economy of Iloilo is in a superior state as compared to the rest of the nation’s cities, especially during the pandemic. This is because of the tourism in Iloilo, and the enhanced urbanization of the city. This is a good example of how and why private sectors or businesses heavily affect the government. It demonstrates how businesses that help develop a city through urbanization can boost the economy of a city through tourism (and even domestically), and on a macro level, a country. This is relevant to democracy because in this kind of government, private sectors are considered by the government when making decisions, given the fact that they greatly influence the economy. Iloilo is a good example as to why this is the case. 
+			</p>
+			
+			<br>
+
+			<p id="body">
+				The residents of Iloilo city executed the same amount of effort as the local government. Multiple contributions were made by the citizens such as the community kitchens, bakeries, and milling firms, who served free food to those in need with the help of other Parent-leaders, daycare workers, and supplemental feeding workers. The bakeries and milling firms paused their business rivalry in order to collaborate and come up with the Ilonggo Pandesal, which was used as the symbol of unity and generosity for the city. They were able to provide 648,000 pieces of free pandesal for those in need within 15 days under the effect of ECQ. The efforts of the citizens did not stop there since the Ilonggo artists began to donate their income by selling their prized paintings, and by providing the city with 300,000 face masks. This was able to showcase that Iloilo City is capable of citizen participation which is the key feature of democracy.
+			</p>
+			
+      <br>
+
+      <p id="body">
+        Iloilo City’s local government exemplified the act of serving its people. Ilonggo artists donated enough funds from selling paintings to the government, who used the proceeds to make thousands of face masks. They also coordinated with the Department of Agriculture (DA) to offer fresh produce to residents. Several initiatives were also proposed such as the contact tracing QR code which made the local government easily identify the health status of individuals. PHP200 million pesos was allocated to buy vaccines as well as proposals for a  command center and a 50-bed hospital. These courses of action which the government is currently doing and their plans to alleviate the spread of COVID in their area show how they are prioritizing and addressing the needs of people.
+      </p>
+
+      <br>
+
+      <p id="body">
+        In conclusion, Iloilo city is an exemplary manifestation of a good democracy. This is because it demonstrates how private sectors affect the government, citizen participation, and competent local government service. These are all features and goals of a democratic system. 
+      </p>
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.pna.gov.ph/articles/1126042</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+	</body>
+</div>
+
+</html>

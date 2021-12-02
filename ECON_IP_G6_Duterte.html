@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Economics - Magazine Article</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .giant {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            width: 70%;
+            background-color: #EB8C4A;
+            padding: 40px;
+        }
+
+        .im {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            margin-top: 3%;
+            width: 70%;
+          }
+
+        #header {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+          }
+
+        #image {
+            width: 80%;
+          }
+
+        #written {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: #2c4a4d;
+          }
+
+        #body {
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 17px;
+          }
+
+        #ref {
+            font-family: 'Cabin', sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: #2c4a4d;
+          }
+
+        #subheading {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 19px;
+          }
+
+        #source {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: #CF6B25;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 15px;  
+          }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+	<body style="background-color: #ffcfad;"> 
+	<!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/c4028157c3da9b76a35c7952f2f24b5e/a1a415a7f9b310aa-b1/s2048x3072/e0386ba4f412cce6802c27dc8dbcf5d52a7fb58e.png" alt="econarticlebanner" border="0" width="100%"> 
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/f38d75324c9c52be51df2ac21c5634f7/8942c697789632c3-81/s1280x1920/5e645d5197f2b8facd02fd557243e07c093d9bf9.jpg" alt="duterte" class="im" id="image">
+			<h2 id="header">
+        Economic Implications of Making Friends with a Flake
+      </h2>
+			<br>
+			<p id="written"><i>Written by Ally Lopez, Keona Cardeno, and Zoe Gregorio</i></p>
+			
+      <br> <br>
+			
+      <p id="body">
+        To flake means abandoning plans with little to no notice. Flakes are those who claim they are so down to hang out, but they are suddenly off-the-grid the moment they get invited to anything. These are also the people with whom you tried to make plans but gave vague answers about their commitment to the schedule. Could you imagine that dynamic on a scale of global superpowers alike? Well, that is the Sino-Philippine relations right now.
+      </p>
+      
+      <br>
+
+      <p id="body">
+        <i>“China always honors its commitments to friends. China attaches great importance to relations with the Philippines and supports the Philippine side in firmly upholding an independent foreign policy of peace”</i>, the Ministry of Foreign Affairs of China stated. The East Asian country has made its desire to pursue a healthy bilateral relationship with the Philippines by upholding its promises to the country clear in its statement. However, CNBC states that China’s President, Xi Jinping, promised President Rodrigo Duterte $24 billion in investment, credit, and loan pledges in 2016 but has not fulfilled these promises. These plans are either delayed, shelved, or put aside. China states that it will always honor its commitments but flakes on that very promise. 
+      </p>
+      
+      <br>
+
+      <p id="body">
+        Why talk about this flaky new friend Duterte made? It is not like you have anything to do with Duterte and China’s blossoming relationship, right?
+      </p>
+
+      <br>
+
+      <p id="body">
+        Well, President Duterte is so focused on strengthening ties with China that he is neglecting the needs of the Filipinos. He says words of praise to China for respecting our country’s sovereign rights, yet China asserts over our resources in the West Philippine Sea. The Chinese Navy has intimidated Filipinos with attack vessels, and Chinese fishermen have made it difficult for local fishermen to fish in our waters. Despite all this, Duterte did not even dare defend his countrymen. He stayed silent about China's behavior for weeks. Since our own President could not assert our sovereign rights, China did not bother taking the protests of Filipinos seriously.
+      </p>
+
+      <br>
+
+      <p id="body">
+        What is holding Duterte back? The bait here is the vague and empty promises of investments China gave him in 2016. The President could have been protecting the country and our resources. Yet, he has been letting China take resources from us in an attempt to strengthen Sino-Philippine relations, even though Filipinos are more in need of it. The Philippines' local source of natural gas, <i>Malampaya Fields</i>, is expected to deplete by 2024. Thus, the country must find new sources of gas to maintain economic growth and support the current infrastructure boom. The West Philippine Sea, which is rich in oil resources, is a potential new source of natural gas. The Filipinos should be President Duterte’s priority. However, the President continues to foster his "principled friendship" with China in 2021, and they vow to continue strengthening their ties in trade, investment, infrastructure, and development. Before we dive too deep into that issue, let us backtrack to where it all began.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">Sino-Philippine relations from 1975 to 2021</p>
+
+      <br><br>
+
+      <p id="body">
+        On June 9, 1975, diplomatic relations between the Philippines and China were established. Since then, the bilateral partnership between the two countries has been asymmetrical in terms of political security, regional cooperation, trade, investment, agriculture, and tourism, as well as culture-wise and social-wise, which have benefited the two countries and their citizens. Over the past 40 years, Sino-Philippine Relations have continued to strengthen.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">The Independent Foreign Policy</p>
+
+      <br><br>
+
+      <p id="body">
+       In Duterte’s presidential campaign in 2016, he announced he would pursue an independent foreign policy. He planned to build a stronger relationship with China for trade and commerce. However, Duterte did not clearly define his independent foreign policy. He executed it by pivoting to China and shunning the United States and other Western allies. Philippine relations with the West took a negative turn due to Duterte’s strong remarks against the United States and European Union. Duterte’s attempts to develop a closer relationship with them affected the Philippines’ foreign economic relations regarding trade and investment. 
+      </p>
+
+      <br>
+
+      <p id="body">
+       It was as if Duterte talked bad about his friend group to befriend this global superpower. As word about what Duterte has been up to with his flaky friend spread around the country, Filipinos were not happy to hear it. As former Philippine Foreign Affairs Secretary Albert del Rosario stated, Duterte’s overly accommodating behavior towards China was unacceptable to Filipinos. The ultimate purpose of a country’s foreign policy is to defend the interest of its people. However, Duterte's independent foreign policy does not. He believed that warming up to China would pay off in economic gains, but his actions lack assertiveness over our resources and regard for our rights. You can see the most significant impact of the policy on the issue regarding the West Philippine Sea.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">The West Philippine Sea</p>
+
+      <br><br>
+
+      <p id="body">
+       The Philippines and China have been having a maritime dispute in the West Philippine Sea since the early 2010s. In an attempt to claim the West Philippine Sea, China expressed its historic rights over the waters via its nine-dash line claim that includes 80% of the Philippines' Exclusive Economic Zone (EEZ). For context, the EEZ is the area in our waters beyond 12 nautical miles up to 200 nautical miles in which the Philippines has jurisdiction and sovereign rights over. China’s nine-dash line claim was invalidated by the Permanent Court of Arbitration in The Hague in 2016. This arbitrary ruling solidified the Philippines’ exclusive sovereign rights and should therefore be celebrated and enforced. However, instead of rejoicing, Duterte downplayed our legal victory over China to garner loans and investments from them. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        <i>“What will I do with a document that is not binding?” </i> Duterte said. He stayed silent about the maritime dispute, as China, his dear friend, refused to acknowledge the ruling, adding to the country’s loss. Duterte’s decision to not enforce the arbitrary ruling puts in danger our sovereign rights over the Philippines’ Exclusive Economic Zone (EEZ). 
+      </p>
+
+      <br>
+
+      <p id="body">
+         Even when Filipino fishermen got attacked by Chinese vessels, he did not stand up to China’s bullying: <i> “Do you want war against China?... It would be a massacre if I go and fight a war now. We are not yet a competent and able enemy of the other side.” </i> China's constant rejection of the 2016 ruling and Duterte's lack of assertion of the Philippines’ sovereign rights has been a huge blow to the country. Even in 2021, hundreds of Filipino fisherfolk have experienced harassment from China in Philippine waters. Fishermen from Zambales, Pangasinan, and Bataan reported that Chinese vessels restricted their movement in Scarborough shoal, as well as in other areas of the Kalayaan Island Group (Spratlys). China may be his friend, but the Philippines is his family. Family comes first. Despite all this appeasement to China and neglect for his Filipinos to get aid from China, Duterte’s plan failed.
+      </p>
+
+      <br><br>
+
+      <p id="subheading"><b>$24 Billion</b></p>
+
+      <br><br>
+
+      <p id="body">
+        When Duterte first visited China early into his presidency, the Philippine government bannered $24 billion, or P1.2 trillion, worth of commitments, and China signed pledges to give aid. Of the $24 billion, $15 billion accounts for company-to-company deals, while $9 billion pertains to loans from credit facilities to be made available to businesses, development projects, and infrastructure, among others. As you might have guessed, our flaky friend, China, has still failed to deliver most of these pledges in 2021. China has not even given half of the promised $24 billion. As of May 12, 2021, only one infrastructure flagship program has been completed: the Beijing-funded Estrella-Pantaleon in Makati City and the P5.9 billion “China grant bridges” in Manila. Thirteen of the promised projects are still pending and expected to be completed in 2022.
+      </p>
+
+      <br>
+
+      <p id="body">
+        In fact, another country has been more helpful than the friend Duterte adores.  Japan is beating China in providing funds for the Duterte administration’s <i> Build, Build, Build </i> project with lower interest rates. Just let that sink in for a while.
+      </p>
+
+      <br>
+
+      <p id="body">
+        Several experts and academics consider China’s investments as corrosive capital that contributes to undermined good governance practices and the weakening of institutions in the Philippines. More Chinese businesses have emerged during Duterte’s term, to the benefit of China. The Chinese government's promises of billions worth of infrastructure deals seem to have collapsed, forcing the Philippines' economic team to turn to other private entities. Foreign direct investments (FDI) have fallen for the most part during Duterte’s term. Since peaking in 2017 at $10.3 billion, FDI has tumbled three consecutive times and worsened by the COVID-19 pandemic.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">Economic Implications</p>
+
+      <br><br>
+
+      <p id="body">
+        Due to Duterte's independent foreign policy stance, the Philippines’ exports to China increased significantly, according to the Department of Trade and Industry. There were 9.8 billion U.S. dollars worth of exports to China in 2019, an increase of 59% since 2016. The increase of the Philippines’ exported goods increases the demand and value of the Philippine Peso, which is beneficial to the economy. According to a Chinese news site, China made it easy for Philippine products to enter their market and invested in the Philippines throughout the Duterte administration. China’s investment in the Philippines should also be helping the value of the Philippine Peso to increase. From this viewpoint alone, it seems like the country benefits from this closer relationship with China, but is this truly the case? 
+      </p>
+
+      <br>
+
+      <p id="body">
+       Let us look back at the West Philippine Sea. President Duterte allowed the Chinese to fish in our waters back in 2019. It has been explored that Duterte has been quite subordinate to China’s assertiveness over our resources at the West Philippine Sea. The President does not want to stand up for the country because he is afraid of hurting his friend’s feelings. With China pressing historical claims that do not hold under international law, the Philippines’ sovereign rights are being infringed by Chinese vessels trespassing Philippine waters for oil and fish. According to a US-based Geospatial-Intelligence, a total of 238 Chinese vessels were spotted along the EEZ, some of these being Chinese militia. 
+      </p>
+
+      <br><br>
+
+      <p id="subheading">So what's the big deal? Who are the stakeholders?</p>
+
+      <br><br>
+
+      <p id="body">
+        China taking resources from the West Philippine Sea causes shortage of local fish supply since Filipino fishermen have to compete with Chinese fishermen in waters meant for the Filipinos to enjoy rights to fish in. The National Task Force for the West Philippine Sea (NTF WPS) reported that the catch of each Chinese fishing vessel in the West Philippine Sea ranges from one ton of fish amounts to a conservative total of 240,000 kilos of fish every single day. Their acts are cases of illegal, unreported, and unregulated fishing (IUUF), which harms legitimate fishing activities and livelihood. Besides this, it also disrupts food and economic security because fishermen cannot get enough fish to stimulate the market’s demand for it. Not only will the people who usually buy from them go hungry, but the fishermen themselves will starve too since they do not earn as much due to the Chinese stealing Philippine resources. 
+      </p>
+
+      <br><br>
+
+      <p id="subheading">But that's just the fishermen. How about the oil and gas resources in the West Philippine Sea?</p>
+
+      <br><br>
+
+      <p id="body">
+        The monetary value of the West Philippine Sea in 2007 was thought to be around USD 1 trillion. As stated by Rappler in an article, <i>“Using the 2007 exchange rate, that’s P44.61 trillion or nearly 6.5 times our GDP back then.”</i> That was 14 years ago; what more now? Long story short, the West Philippine Sea is a gold mine waiting to be extracted. It is rich in natural resources such as fisheries, natural gas, and black gold, better known as oil. 
+      </p>
+
+      <br>
+
+      <p id="body">
+         In economic terms, the maximum gain here for both parties is to have a monopoly over the resources in the WPS. However, out of the two parties, only China would have the means to extract the oil and gas themselves, while the Philippines would still need to attract foreign companies to extract it for them. To date, China and the Philippines have plans to do exactly that through a promising joint exploration of the natural resources in the WPS. But if you take a closer look at the agreements, they take on a shadier side. According to Mr. Batongbacal, an associate professor at the University of the Philippines College of Law and director of the University’s Institute for Maritime Affairs and Law of the Sea, <i>“The agreement commits both parties to share the “outcomes” of joint exploration, which is an awkward and ambiguous term. It is not clear whether this refers to data, information, contract areas, resources produced, or possible future petroleum projects.”</i>
+      </p>
+
+      <br>
+
+      <p id="body">
+        The ambiguity of China is not reassuring, especially since the Philippines has the possible opportunity to lower its inflation rate through the newfound local oil resources. How so? Oil prices and inflation have a direct relationship since oil is a major input (for electricity, transportation, etc.) in the economy, both at local and global levels. For example, if oil prices surge, it would take more money to make a common input like plastic because the process would entail gas for transportation and oil for electricity for the machinery. All companies that use plastic or polymers in their products would incur more costs, forcing them to raise their prices to compensate for that extra expense, causing inflation in prices. This means that as oil prices go up, so does inflation. But what if the Philippines had its own natural supply of oil? The country would not need to import oil, which would, in turn, make the Philippine Peso appreciate since there will be less expenses on foreign exchange. Not to mention, other countries might find it more beneficial to trade with us in return for oil. China sees that benefit but takes a different approach: instead of trading with the Philippines for oil, they saw a “better” option of just taking it themselves. 
+      </p>
+
+      <br>
+
+      <p id="body"><i>
+        “President Duterte was ‘loving’ and embracing China over and above the interest of the country and its people… Instead of standing up for his own people, the president is tyrannically forcing us to be silent against China’s encroachment of our territory and maritime entitlements.” - Former Foreign Affairs Secretary Albert Del Rosario
+      </i></p>
+
+      <br>
+
+      <p id="body">
+        Overall, President Duterte should realize that China is a flaky friend who is not worth keeping close ties with. All his appeasing has done more harm than good, and it is hurting Philippine trade. Despite Xi and Duterte talking about their warm, rosy ties, China is not fulfilling their part in this relationship. The foreign policy of a country is supposed to protect the interests of its people. However, President Duterte’s independent foreign policy does not show how his relations with China would significantly benefit Filipinos. Since the 2022 elections are approaching, you, as a qualified voter, must use the opportunity to take a step towards alleviating the nation’s flaking economy. Given  President Rodrigo Duterte's decisions as the leader of our country, hopefully you can discern on who to vote for in the upcoming elections. Just imagine the Philippines with a strong economy guided by competent leaders. Would that not be spectacular? Thus, by voting wisely, you have the power to create that change and pave a path of hope for our country. 
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.cnbc.com/2020/09/08/philippine-president-duterte-fails-to-produce-results-from-pro-china-stance.html</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Phone *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+	</body>
+
+</html>

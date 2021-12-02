@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Economics - Magazine Article</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+    ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .giant {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            width: 70%;
+            background-color: #EB8C4A;
+            padding: 40px;
+        }
+
+        .im {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            margin-top: 3%;
+            width: 70%;
+          }
+
+        #header {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+          }
+
+        #image {
+            width: 90%;
+          }
+
+        #written {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: #2c4a4d;
+          }
+
+        #body {
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 17px;
+          }
+
+        #ref {
+            font-family: 'Cabin', sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: #2c4a4d;
+          }
+
+        #subheading {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 19px;
+          }
+
+        #source {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: #CF6B25;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 15px;  
+          }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+	<body style="background-color: #ffcfad;"> 
+	<!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/c4028157c3da9b76a35c7952f2f24b5e/a1a415a7f9b310aa-b1/s2048x3072/e0386ba4f412cce6802c27dc8dbcf5d52a7fb58e.png" alt="econarticlebanner" border="0" width="100%"> 
+
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/6392c4b3fdf6641087f8ec4badcd4fd3/8942c697789632c3-d5/s400x600/8b53c867d86907261733a9bb09b4b0fc321d57a2.png" alt="IskoMorenoGAD" class="im" id="image">
+			<h2 id="header">
+        A New Level of Inclusivity
+          <br>
+      <i>Lacson’s Priority: the National ID System</i>
+      <br>
+      </h2>
+			<br>
+			<p id="written"><i>Written by Janea Mancia, Tara Penson, Bettina Aguirre</i></p>
+			
+      <br> <br>
+			
+      
+
+    
+
+			<p id="body">
+				Have you been following the news on the upcoming 2022 Elections? With so much information floating about, keeping up must be difficult. This flood of information might be overwhelming online, and registration requires applicants to visit their local COMELEC offices. Voter cut-offs have recently been reported, with applicants lining up as early as 3:00AM, only to be cut off after waiting for almost the entire morning!
+
+COMELEC registration already demands various identity documents. Because of the volume of records, the process takes a long time to finish. Having everyone else bring their documents adds to the wait time, hence the queues. Remember that voter registration is just one of many things citizens must do. If registering to vote is tough, what more everything else? Can you imagine standing in huge lines, lugging tons of paperwork, and waiting hours and hours for every transaction?
+
+Additionally, the Philippines lacks herd immunity, which requires 70% of the population to develop an immunological response. Reuters COVID-19 Tracker shows that as of September 22, 2021, 19.7% of the Philippine population had been fully inoculated with the vaccine. Despite these figures, citizens are still at risk of contracting COVID-19, especially during the registration procedure due to prolonged exposure to other people. As a result, a more efficient way is required to improve service delivery and transaction convenience.
+			</p>
+			
+      <br><br>
+
+      <p id="subheading">What is the National ID system?</p>
+
+      <br><br>
+
+      <p id="body">
+        Luckily, there is a specific law that addresses this, as well as carrying many other benefits with it. On August 6, 2018, The Philippine Identification Systems Act, also known as Republic Act No. 11055, was implemented, approved, and signed into law by President Rodrigo Duterte. (ABS-CBN, 2020) Written and mainly sponsored by Senator Panfilo Lacson, the law states that only a single identification card containing the biometric and demographic data of each citizen is to be issued for all Filipinos.  
+      </p>
+
+      <br><br>
+
+      <p id="subheading">The Law’s Brief History</p>
+
+      <br><br>
+
+      <p id="body">
+        The proposition of this law dates way back to the 1990’s, during the administration of Former President Fidel Ramos. However, the attempt to establish the National ID was unsuccessful due to lack of congressional support and privacy concerns. Ever since Panfilo Lacson was elected as a Senator in 2001, he has been advocating for the full implementation of the Philippine Identification Systems Act, and after several bills and acts written by other senators and representatives regarding the law, the Committee Report No. 277, a collective document recommending the approval of the National ID System, was created. The document was then ultimately filed on March 12, 2018.
+
+      </p>
+
+      <br>
+
+      <p id="body">
+        Despite the new identification system's approval, concerns about the privacy of Filipino citizens who register for one arose. Lacson reassured that it would not violate human rights policies because it only holds the basic information of each citizen. He compared the National ID to other IDs. “Do those opposing the measure have a driver's license or voter ID? Those IDs contain the same information, including biometrics, as the National ID, so why are they complaining after going through the process?” (2018, Manila Times). Information indicated in the National ID would only be disclosed should it be ordered by the court for any legal matters.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">The Advocate</p>
+
+      <br><br>
+  
+      <p id="body">
+        The National ID’s main sponsor, Panfilo "Ping" Morena Lacson, Sr., has experience in public service for over 50 years. He first studied philosophy as a pre-law at the Philippine Lyceum. In 1966, he graduated from Pamantasan ng Lungsod ng Maynila in Government Management. Lacson passed the entrance exam for the Philippine Military Academy (PMA) and attended the academy in 1967. Afterwards, he became a senator from 2001 to 2013, co-authoring numerous anti-pork bills, laws, and resolutions as part of his advocacy. Nowadays, he heads the Philippine National Police (PNP) from 2016 until today. His notable accomplishments include the removal of corrupt policemen and various organized crime syndicates engaged in kidnapping, drug trafficking, and other criminal activities.
+
+      </p>
+
+      <br><br>
+
+      <p id="subheading">How Can I Register?</p>
+
+      <br><br>
+
+      <p id="body">
+        Applying for the Philippine Identification System begins with online registration. You are asked to fill out an online form with the following information: first name, middle name, last name, sex, date of birth, marital status, birthplace, blood type, ZIP code, present home address, and either your contact number or email address. Completing the online registration will allow you to book an appointment which leads to the second step of the registration process, and you will receive a message or an email of confirmation. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        So you booked an appointment, now what? In this second step, your biometric data will be collected, such as fingerprint scans, iris scans, and a front-facing photograph. Here, you are required to bring to your local registration center any of the following documents:. a Philippine passport issued by the Department of Foreign Affairs (DFA), either a driver's license or a student's license permit from the Land Transportation Office (LTO) or a birth certificate from the Philippine Statistics Authority (PSA). If none of these documents are available, you have a wide variety of documents that you can choose from. There are no fees involved at all in this registration process as it aims to ensure efficiency. By providing the required biometric information and documents, you are now qualified to be issued a PhilSys number and eventually, your official PhilI which will be delivered to your indicated home address.
+      </p>
+
+      <br><br>
+
+      <p id="subheading">Importance of the National ID</p>
+
+      <br><br>
+
+      <p id="body">
+        The Philippine Identification Systems (PhilSys) Act mandates the National ID System. It strives to modernize government processes. Opening bank accounts and giving financial aid becomes easier with the ID. Governments and financial organizations will accept it. This covers banking and financial transactions, making money easier to withdraw and receive. With the nation-wide identity system, you can avoid bringing several documents. In addition, the ID provides all relevant information for many services and transactions. This includes obtaining police clearances and applying for government social support programs. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        In shorter terms, the National ID System serves as permanent means of identification for all Filipino citizens and resident aliens, as it contains the biometric and demographic information of each person. This law has been constantly supported by Panfilo Lacson, ever since he began his career as a Senator in 2001. As an advocate of the PhilSys Act, he has addressed various concerns such as data privacy issues upon the system’s application. Furthermore, he explained the social and economic benefits of having a National ID, which include creating easier identification of individual profiles, improving existing government and financial services, and limiting acts of corruption in the government. Services from both private and public institutions will become more efficient because the turnaround time for processing documents will significantly decrease. Individuals need not go through tedious procedures for registration or administration. Additionally, this system will also address corruption since the risk of fraud will be mitigated. 
+
+      </p>
+
+      <br>
+
+      <p id="body">
+        So, how attractive does the National ID sound? You don’t need those lengthy processes for your registrations and transactions with all of your personal information in a single ID. With the increased access to social welfare and benefits and improved distribution of financial aid, it is not only a convenience but also a promotion of inclusivity. The idea of the full implementation of the National ID System, especially with its significant benefits paired with little to no costs or drawbacks, sounds almost too good to be true, and you can help support this! You can be one of the millions of people who have registered for their National ID today, and encourage your family and friends to join you. A democracy can only thrive if its citizens are willing to participate, and this certainly applies here. 
+
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.filwebasia.com/10-things-know-philippine-national-id-system/</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+	</body>
+
+</html>

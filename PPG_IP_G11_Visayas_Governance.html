@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Politics & Governance - Article Analysis</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remove margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+     ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .giant {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            width: 70%;
+            background-color: #A8A8F0;
+            padding: 40px;
+        }
+
+        .im {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            margin-top: 3%;
+            width: 70%;
+          }
+
+        #header {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+          }
+
+        #image {
+            width: 90%;
+          }
+
+        #written {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: #2c4a4d;
+          }
+
+        #body {
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 17px;
+          }
+
+        #ref {
+            font-family: 'Cabin', sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            color: #2c4a4d;
+          }
+
+        #subheading {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: black;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 23px;
+          }
+
+        #source {
+            font-family: 'Cabin', sans-serif;
+            text-align: justify;
+            color: #8686EA;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 15px;  
+          }
+
+	body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+	<body style="background-color: #CBCBF6;"> 
+	<!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+
+   <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+		<img src="https://64.media.tumblr.com/36fe79e44177e68df0ef019d613a8e72/a1a415a7f9b310aa-0c/s2048x3072/9b9c02a229a249306c24f5e6e57a8983021faef6.png" alt="polgovarticlebanner" border="0" width="100%"> 
+
+		<div class="cen">
+			<img src="https://64.media.tumblr.com/efb2ea2466a766ebd875bef12c695752/5b465f0ca6599b39-39/s2048x3072/1d26ab7c3e6a307db8adc7de7cf22392abd3ec2d.jpg" class="im" id="image">
+			<h2 id="header">
+        Analysis on "Good governance and multi-sectoral synergy for pandemic response in Western Visayas, Philippines"
+      </h2>
+			<br>
+			<p id="written"><i>Written by Cheska Sto. Domingo, Kendra Syquia, and Faith Villaluz</i></p>
+			
+      <br> <br>
+
+			<p id="body" >
+        The Philippine democratic system has several key features that set it apart from other democracies. One of these features include how it is unitary and decentralized in its nature. Subsidiarity, the idea that things that may be done in the lower levels must be allowed to take place there, inspired the establishment of the local government units (LGUs). These units take charge of less urgent matters that occur in the provinces, cities, municipalities, and barangays. Consequently, allowing the national government to focus on more crucial issues. 
+      </p>
+      
+      <br>
+
+      <p id="body">
+        When the Covid-19 virus made its first appearance in the Philippines in March 2020, the local government units and different sectors had struggled to address the situation. A definite strain was placed on the country’s healthcare system, as necessary laboratory equipment and medical supplies were very limited due to an increase in their demand. Despite this, the local government units located in Western Visayas managed to take charge of the situation and provide a model pandemic response. 
+      </p>
+      
+      <br>
+
+      <p id="body">
+       In the Local Government Code of 1991, the local government units were provided with certain powers meant to aid the national government with decentralization. Some of these powers include health services, social welfare, public works and facilities, as well as research and development. The Western Visayas LGUs took advantage of these powers through the implementation and execution of their pandemic response. With the help of local civil society organizations, the local government was able to devise a plan to combat the Covid-19 virus. ThinkWell Philippines, one of the civil society organizations that provided technical assistance, teamed up with Academia to supply credible texts and context-specific evidence. The gathered data was used to trace the first few Covid-19 cases within the region and was disseminated to networks in the health sector and academia. Thus, leading to their collaboration with public health experts from the University of the Philippines Visayas (UPV). These discoveries by ThinkWell and UPV made significant contributions to the region’s decision making regarding their plans to tackle the health crisis and were utilized by the other sectors in their planning as well. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        Aside from the civil society organizations, the citizens of Western Visayas themselves also played a vital role in the region’s response to the global pandemic. Public and private stakeholders took the initiative and hosted several food and donation drives to show their support for the front liners serving in the region. The local government, along with the regional Department of Health (DOH), the academia, and private sector, was able to facilitate the necessary laboratory equipment and supplies. Science and technology schools took the initiative and augmented PPE supplies through self-produced alcohol, face shields, aerosol boxes, and prototyped ventilators. Local fashion designers collaborated and redirected their skills to produce hazmat suits for frontline workers. As a result of these efforts, Western Visayas’ first functioning Covid-19 testing laboratory was mobilized. Aside from this, new markets for mangoes were created through social media marketing and online platforms in order to aid local farmers and ensure no wasted agricultural products.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        The combined efforts between the local government, civil society organizations, and the citizens set the standard for the rest of the country in terms of both pandemic response and proper democratic governance. 
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://thinkwell.global/governance-for-pandemic-response-philippines/</p>
+
+      <br>
+
+    </div>
+
+		<footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+	</body>
+
+</html>

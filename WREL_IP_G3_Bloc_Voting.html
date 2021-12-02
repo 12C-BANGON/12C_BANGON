@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>World Religion - Magazine Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 80%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #398177;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/132303843a7d54d104c8285b66c9f3d5/a1a415a7f9b310aa-fb/s2048x3072/0b027c675a5edf952efdb11e38e85fb8da36c8ae.png" alt="worldrelarticlebanner" border="0" width="100%"> 
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/53e6dee11a6990422033a63e093a3005/19df60b677eb9c94-ad/s640x960/032ceab4b347d6706e3d1484a5aca8f0a0f21abe.png" alt="jonny" class="im" id="image">
+      <h2 id="header">Analysis on “Johnny Smith and the Wonderful World of Political Hiveminds”</h2>
+      <br>
+      <p id="written"><i>Written by Jezzy Parinas, Charmaine Santos Ocampo, Megan Sison</i></p>
+      <br> <br>
+      <p id="body" >
+        Johnny Smith was a pious son. Happily born into a family of “true believers”, Johnny’s life was set out for him from the very beginning. His father served as a head deacon, his sisters were a part of the head choir and his eldest brother strived to become the next head deacon. As a child he felt like the spare, a boy who had no clue what his future held for him. His siblings already had goals set out for them, yet Johnny felt that the life they wanted to lead was not for him. He felt awful when he questioned his authenticity in believing in God and considered himself the black sheep of the family.      
+      </p>
+      
+      <br>
+
+      <p id="body">
+        Soon enough, he was of legal age to vote in the upcoming elections. He had his own thoughts on who he would vote for and kept this opinion to himself, but then his father, the head deacon, started steering him into private conversations regarding politics after dinner. Johnny, aware of his family’s business, already knew what this meant in advance: he should vote for whoever his father supports as a candidate. While the announcement was still not made to the public yet, it would be in a short while. Then his vote would be counted as one with the whole of their religious group, all for the set of politicians his father approved of. “Here we go, with our holy practices again.” Well, if it helped the country, why not just go with the flow of things as usual? 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        With this, do you guys see how bloc voting is pretty much one of the biggest threats to our nation’s democracy? Yeah, the Philippines is a religious country, but when it comes to situations like this, we’d be better off separating the church from the state lest we revert to how it was in the medieval times. ‘Bloc voting’ is used for a bunch of people putting their brains together to vote for one common person, or a set of candidates. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        So these religious sects have these little “get-togethers” called bloc voting  when the time comes for us to choose our next sacrifice to lead the country. In these get-togethers, the members of these religious organizations hear what their leaders have to say about the political candidates of the election, and give their own verdict on whom everyone needs to vote for. That doesn’t mean that the members get to choose, haha. That would be too democratic. Instead the leader would choose them for everyone else, using the justification that these leaders follow whatever their group preaches about. Some sects who are quite known for doing this practice are: El Shaddai, Iglesia ni Cristo, and the Seventh Day Adventists.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        For many years, the El Shaddai group have been known to bloc vote for a selected set of candidates approved by the current leader, Bro. Mike Velarda - albeit, only 40% of the group’s total of about five million members do it. Interestingly, the leader endorses these candidates who he selects. Two reasons as to why he chooses to endorse them is: a) he believes they have the capacity to help the poor and b) the candidate themself directly requested his help and thus, he endorsed them. But in 2019, a few scandals did rise up due to this ‘endorsing’ of some of the 14 senatorial candidates: namely due to the candidates’ corrupt practices and started questioning El Shaddai group’s honesty. However, past El Shaddai leaders have done this ‘endorsement of candidates’ as well, even for presidential candidates, starting from Quezon, and even Aquino has been endorsed by the El Shaddai group. 
+      </p>
+
+      <br>
+
+      <p id="body">
+        The INC church is one of the most well known groups involved in the process of bloc voting. In recent years however, mainly seen in the previous elections of 2016, members of the religious group have begun to somewhat distance themselves from the idea, thanks to a number of scandals involving the leadership that took place the year prior. Another reason as to why a number of members have begun to reject the practice is because of the kind of politicians their leadership seems to back. The reasons behind why the leadership backs these certain politicians are not explained to the public either, leading most to suspect bribery and corruption to be the main reason for their support. It was also seen in the previous elections that the INC’s bloc voting power has actually begun to lessen, with only 77% voting for the same leaders in 2010.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        The 7th Day Adventists are a religious group that discusses the relationship between authorities and religious servants during the season of voting for political candidates, listing down the “God chosen” standards a person must consider before they elect leaders. An important role that plays in this is bloc voting and how it’s done in this tightly knit community. The religious leaders give their followers points to remember when voting for their candidate. The most important characteristic is on how they have to conform with God’s will. Furthermore,  the different aspects of an appropriate candidate and how they should both strive to protect the country and enact the principles of their God’s will is highlighted.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        Bloc voting warps the perception of the populace. It necessitates a culture of over reliance on a single person’s choice, thus rendering the freedom of choice and the democracy to choose useless. It will encourage a mindset of a white sheep, blindly following on who to vote but not researching about the candidates and whether or not they deserve a seat in the government. These negative influences will perpetuate the environment of irresponsibility. In doing so, encourage a life that is not their own to control.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        At last, we return to our dearest little friend Johnny Smith. As he pondered upon his father’s words that night, his mind was brought back to his thoughts of doubt regarding both himself and his faith. Now, he was struggling whether to choose what he believed in, or if he were to choose what everyone else wanted him to do. If he were to vote for the politicians endorsed by his father, whom he did not totally agree with, he would at least be going along with his fellow brothers and sisters in the faith; but wouldn’t doing that essentially be telling a lie? If he were to vote for the politician he truly believed was best for the country, he could be shunned by his family or religious group if they found out, or worse, be barred from ever entering heaven, recalling what many leaders had said in past meetings. After constant deliberation, he finally came to a decision.  
+      </p>
+
+      <br>
+
+      <p id="body">
+        Johnny chose not to go along with the bloc vote. As he contemplated his decision, he thought: “You know what, I think I’m going to finally choose what I want to do, not what someone else expects of me to do.” Even after that thought, he began thinking about all of the expectations his family and the rest of the people within his group had of him. They always compared him to his brother and sisters, as if they believed he would never amount to anything compared to them. “Well, enough is enough,” he thought. “Perhaps it’s about time I stop caring about what they’ll all think of me when I’m truthful about what I believe, and start living for myself!”  
+      </p>
+
+      <br>
+
+      <p id="body">
+        Steeling himself, he made his decision to vote and live freely, and as he made that choice, it felt as if a heavy weight was lifted from his shoulders. He had accepted that he had the free will to choose what he wanted to do in his life, without having to worry about what others or his family would think. He had done what he believed was the right thing to do.  
+      </p>
+      
+      <br>
+
+      <p id="body">
+        So here we have it, bloc voting ‘in the name of Jesus’, with some corruption scandals here and there for good measure, because what is the voting season without some of these cropping up?  As can be seen, not all the religious leaders/groups entirely have the best criteria/recommendations - oh bribery how you never fail - for selecting a candidate , but due to the sheer number of followers who do bloc vote for a candidate , they have quite the power to tip the scale during the counting of ballots, and thus, may decide the fate of the country, for better or for worse.  
+      </p>
+
+
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.rappler.com/nation/elections/filipinos-vote-dubai-first-day-overseas-voting</p>
+
+      <br>
+    </div>
+
+    <footer>
+  <footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>World Religion - Magazine Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--remonve margin-top from .center if you want the rectangle to go all the way to the top.-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #65B8A8;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 80%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 23px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #398177;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+  <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/132303843a7d54d104c8285b66c9f3d5/a1a415a7f9b310aa-fb/s2048x3072/0b027c675a5edf952efdb11e38e85fb8da36c8ae.png" alt="worldrelarticlebanner" border="0" width="100%"> 
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/0c55acef185f0634014a70fad88d6338/19df60b677eb9c94-ae/s400x600/ff44e5dd82d41e07b7c734af89d2eaca398666b4.png" alt="peace" class="im" id="image">
+      <h2 id="header">"The Bearer of the Sword"</h2>
+      <br>
+      <p id="written"><i>Written by Ia Barrientos, Cristina Claparols, & Arin Lee</i></p>
+      <br> <br>
+      <p id="body" >
+        The same sun that shines upon the rest of the Philippines graces its rays over the Bangsamoro region, yet a looming shadow casts its way throughout the lands. This ever-proliferating thing entices, aggravates, and motivates pained minds of Muslim citizens as it slips from one person to the next. 
+
+      </p>
+      
+      <br>
+
+      <p id="body">
+        Extremism currently encompasses the beliefs of many Islamic separatist groups in BARMM (Bangsamoro Autonomous Region in Muslim Mindanao). The Abu Sayyaf (ASG), the title meaning “the bearer of the sword'', is one of the many groups that are notorious throughout the country for their activity in Mindanao. With their radical views on the Islamic beliefs, they attempt to justify the violent and terrorist means to achieve an independent Islamic state in the Philippines. However, this mindset is misleading. Religion itself is not the reason why people choose to do extreme actions; rather, they are used as a guise by which personal aims and ambitions hide behind. 
+
+      </p>
+    
+      <br>
+
+      <p id="body">
+        First of all, it is necessary to understand that the extremism that haunts the Bangsamoro region is but the fruit of time and the difficulties it harbored. From the Spanish occupation to the American rule, all the way until the present moment, Muslims have been facing discrimination due to their religion. Because of this, an anti-West sentiment blossomed among the current population, where they also tried to counter the ideas and discoveries from the Enlightenment Period. In addition to this, the Muslim community also currently experiences bigotry as citizens of a primarily Catholic country. Oftentimes, they are reduced to the idea of being terrorists by Filipinos. There have also been instances when the political system would procrastinate on investigating issues regarding the Muslim community, resulting to there being resentment among the Filipino followers of Islam towards the government. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        On top of everything, animosity between one another in the community are heightened due to differences in interpretations of Islam. Some groups lean towards more modern understandings of teachings, while others insist on traditional means that allow them to take the first religious literature word for word. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Aside from the tense atmosphere the Filipino Muslims in Mindanao are caught up in, people tend to pursue radical beliefs based on prior beliefs as well. Several among the Muslim community subscribe to the notion of jihadism. As a religious ideology of Islam, the concept of jihadism promotes violence must be used in order to execute God’s will. However, it is not about simply committing violence for the sake of it; Jihadism views violence as a means of overcoming internal struggles of some followers of Islam such as the baser inclinations of humans, the desire to build a good Muslim society, and the clash with non-Muslim beliefs. Finally, the fruits of the years and existing beliefs tipped over the pot that was bound to boil over, and it is here where the story begins.
+      </p>
+    
+      <br>
+
+      <p id="body">
+        When the biggest shadow was cast, it was at the time when Abdurajak Abubakar Janjalani stumbled upon the Al Islamic Tabligh in the 1980s, a Muslim fundamentalist movement. He started studying abroad in the Muslim countries through the support of Islamic Tabligh, and encountered Osama bin Laden in Pakistan. The latter had made a significant impression on Janjalani as a living inspiration. After being influenced enough to change himself, he realized that in reality the efforts of existing radical groups were insufficient to establish an Islamic state, and tried to form an organization seeking more extreme means. In 1991, Janjalani finally formed a new organization called Abu Sayyaf with former members of the MNLF who shared such feelings in extreme activities, since they thought the advocacy and actions of the MNLF were not radical enough. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Abu Sayyaf still uses a number of means to influence people to join the organization. Effectively, people tend to fall into radical propaganda when they feel their needs are not met by the state. The Islamic community views education and taking up weapons as contributors to individual honor and status. Since many of the people in Mindanao, especially in BARMM, are mostly impoverished and uneducated, the group uses these circumstances to their benefit through monetary incentives. They also provide with the promise of islamic education, therefore effectively brainwashing students of Madrasa which are the schools attached to mosques. They also have a close community relationship with the concept that social bonds are valuable assets in the recruitment process. ASG has been found to be recruiting members within the village where they live with help from their families and friends. With the use of the Internet, ASG has expanded its scope of audience to be deceived by their influence. By using the subtle use of propaganda, people would gradually be inclined to accept ASG’s beliefs.
+      </p>
+    
+      <br>
+
+      <p id="body">
+        The group decided to make themselves first heard in 2000. On the island of Sipadan, Malaysia a dive resort was invaded by Abu Sayyaf gunmen. They had 21 hostages and over the course of a year they continued to attack resorts and take in more hostages. This eventually led to the Dos Palmas kidnappings wherein at least 5 of the hostages were shot to death or beheaded.
+      </p>
+    
+      <br>
+
+      <p id="body">
+        In 2004 at about 11 pm on a cool February night, SuperFerry14 had sailed out, on its way from Manila to Cagayan De Oro. The ship carried 899 passengers that consisted of families, children, and even students who were on their way to a journalism competition in Northern Mindanao. Little did they know that things were about to turn for the worst. One hour within the ship’s sailing, right off the coasts of either El-Fraile and Corregidor Island an explosion had happened. From the inside out, a fire had engulfed the vessel and its passengers. The captain, Ceferino Manzo, announced the order to abandon ship by 1:30 am. A total of 116 lives were taken and only 63 bodies were recovered, the rest were presumed dead. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        On May 23, 2017 a fight broke out between the Philippine Military and an alliance of militants who call themselves the Islamic State (IS), otherwise known as the “Battle of Marawi.'' The Abu Sayyaf worked with the IS during the siege of the city which lasted for months, displacing thousands. As if the era were the Roman Empire, the blood of Christians and innocent civilians painted the streets of Marawi. Hostages, were subjected to slavery and brutal torture. Those who could not recite Shahada on the spot were immediately shot. Those who could not escape in time survived through rain water and fear of being found.
+      </p>
+    
+      <br>
+
+      <p id="body">
+        People with little awareness on the situation of Muslim Community are likely to generalize that all Muslims accepts terrorism and violence through the violent and impactful actions of the Abu Sayyaf who commit crimes in the name of their Religion Islam. The spread of these harmful stereotypes have an enormous impact on the Muslim community that further emphasize the disconnect between the government and the Islamic people. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Though the activities of the group have been steadily dying down, the damage has already been done. The influence they still hold over parts of Mindanao has further reinforced harmful cycles of poverty and abuse the community has endured for centuries.The MNLF and MILF have made strides with the Philippine government to make Mindanao an autonomous and independent region however, the actions of the ASG to dismantle these negotiations via violence has halted progress. Keeping the Muslim people even further away from the change they have been working towards. 
+      </p>
+    
+      <br>
+
+      <p id="body">
+        Will the sun’s rays ever gaze upon the Bangsamoro Region, whose Muslim people are constantly engulfed by this unceasing shadow?  
+      </p>
+
+      <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.philstar.com/pilipino-star-ngayon/metro/2017/05/29/1704795/netflix</p>
+
+      <br> 
+    </div>
+
+    <footer>
+  <footer>
+  <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form action="#">
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" required>
+      </div>
+      <div class="number">
+      <div class="text">Number *</div>
+      <input type="text" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button type="submit">Send</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+     </div>
+</footer>
+
+  </body>
+</div>
+
+</html>

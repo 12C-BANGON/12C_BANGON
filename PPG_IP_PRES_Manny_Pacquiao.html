@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Politics & Governance - Candidate Profile</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+  ul .navbar {
+          list-style: none;
+        }
+
+        li {
+          font-family: Poppins, sans-serif;
+          float: left;
+          font-size: large;
+          margin-right: 30px;
+          margin-top: 25px;
+          list-style: none;
+        }
+
+        .navbar a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 15px;
+          font-family: Poppins, sans-serif;
+        }
+
+        .navbar a:hover {
+          font-family: Poppins, sans-serif;
+          color: white;
+          background-color: #FFE5A4;
+          }
+
+        .center {
+          display: block;
+          margin: 1%;
+          margin-bottom: 10px;
+          width: 95px;
+          height: 95px;
+          border-radius: 100%;
+          border: 3px solid #e7dbc9;
+        }
+
+        .topnav-center {
+            width: 15%;
+            height: 50%;
+            float: left;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            margin-left: 1%;
+        }
+        
+        .topnav-left {
+            width: 40%;
+            float: left;
+            /* border: 1px solid blue; */
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topnav-right {
+            width: 40%;
+            float: right;
+            /* border: 1px solid green; */
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+  .giant {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 70%;
+    background-color: #A8A8F0;
+    padding: 40px;
+  }
+
+  .im {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 70%;
+  }
+
+  #header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+  #image {
+    width: 40%;
+  }
+
+  #written {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #2c4a4d;
+  }
+
+  #body {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 7%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+  #subbody {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+	#subsub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 15%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+
+#triplesub {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 20%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+#tamanasub {
+		font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: black;
+    margin-left: 25%;
+    margin-right: 3%;
+    font-size: 17px;
+}
+
+  #subheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 19px;
+  }
+
+  #source {
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    color: #8686EA;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 15px;  
+  }
+
+  body{
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #398177;
+}
+.main-content{
+  display: flex;
+  width:  100%;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 6%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: -8%;
+}
+.box h2{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+}
+.box h1{
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #EC8238;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -15px;
+  height: 4px;
+  width: 100%;
+  background: white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 30%;
+  background: #EC8238;
+  top: -15px;
+}
+.left .content p{
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-family: 'Cabin', sans-serif;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  margin-top: 23px;
+  text-align: center;
+}
+.left .content .social a{
+  padding: 0 0px;
+}
+.left .content .social a span{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #99c4bc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+.left .content .social a span:hover{
+  background: #EC8238;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.right form .msg{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #99c4bc;
+  padding-left: 10px;
+  resize: none;
+  border: none;
+  height: 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.right form input:focus, .right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+  .right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:#99c4bc;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.right form .btn button:hover{
+  background: #EC8238;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #99c4bc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<script>
+      function isPhoneValid(phone){
+        if(phone.length == 11 && phone.substring(0,2) == "09"){
+          if(isNaN(phone)){
+            return false
+          }else{
+            return true
+          }
+        }
+        return false
+      }
+      function isValid(){
+        var phone = document.getElementById("phone").value
+          if(isPhoneValid(phone) == false){
+          return false
+        }
+        return true
+      }
+      function validate(){
+        if(isValid() == true){
+          alert("Your response has been recorded.")
+        }else{
+          alert("Something is wrong with your input.")
+        }
+      }   
+    </script>
+
+  <div class="giant">
+
+  <body style="background-color: #CBCBF6;"> 
+  <!-- change the bg color and pick whichever banner applies-->
+
+  <div class="giant">
+  <body style="background-color: #C7E5DF;"> 
+  
+    <div style="width: 100%;
+            background-color: #EC8238; 
+            align-items: flex-start;
+            align-content: space-around;
+            float: left;
+            align-items: center;
+            padding-top: 5px;">
+        <div class="navbar">
+        <div class="topnav-left">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="ECON_SF.html"><strong>ECONOMICS</strong></a></li>
+            <li><a href="WREL_SF.html"><strong>WORLD RELIGIONS</strong></a></li>
+        </div>
+        <div class="topnav-center">
+        <img class="center" src="https://64.media.tumblr.com/8973a93f1b89e52847197197d13b83d1/848e29b2fa97d74b-a9/s540x810/3aa33ca699be7a4dfccce0a3e63e9c4e871d76b8.png" alt="Bangon Logo">
+        </div>
+        <div class="topnav-right">
+            <li><a href="PR2_SF.html"><strong>RESEARCH</strong></a></li>
+            <li><a href="PPG_SF.html"><strong>POLITICS & GOVERNANCE</strong></a></li>
+            <li><a href="AHON.html"><strong>AHON</strong></a></li>
+        </div>
+        </div>
+    </div>
+    <div style="width: 100%;
+          height: 30px;
+          background-color: #398177; 
+          float: left;">
+    </div>
+
+    <img src="https://64.media.tumblr.com/f4293d884ea039a94259a690cd9cdf0e/a1a415a7f9b310aa-3e/s2048x3072/a0cd663df1a54fdbd81d22daa186e5661f49f036.png " alt="candidateprofilebanner" border="0" width="100%"> 
+
+<!---------- Candidate ------------>
+
+    <div class="cen">
+      <img src="https://64.media.tumblr.com/3ba7a5a4868bacc5284add4dc9fd3a86/08bdc348bb38258e-a8/s400x600/78315a8c400f20b3d2c394829f496868fca1c1f7.jpg " alt="Pacquiao" class="im" id="image">
+      <h2 id="header">
+        Emmanuel “Manny” Pacquiao 
+      </h2>
+      <h3 id="header">Running for President, PDP-Laban/PROMDI/PCM Alliance</h3>
+      <br>
+      <p id="written"><i>Researched by Ally Lopez</i></p>
+      
+<!---------- Education ------------>
+
+      <br><br>
+        <p id="subheading"><b>Education</b></p>
+      <br>
+      
+      <p id="body" >
+        1. He took the BSBA-Marketing Management Program at <strong>Notre Dame of Dadiangas University</strong> in General Santos City.
+      </p>
+          
+  
+      <br>
+
+      <p id="body">
+        2. Transferred and graduated from the <strong>University of Makati</strong> in 2017 with a bachelor of science degree in political science.
+      </p>
+          
+
+        <br><br>
+        <hr>
+
+<!---------- Accomplishments ------------>
+
+      <br><br>
+        <p id="subheading"><b>Accomplishments</b></p>
+      <br>
+
+      <p id="body">
+        1. He joined the Philippine Military in 2011 and ranked Lieutenant Cornel for the 15th Ready Reserved Division
+      </p>
+          
+      <br>
+
+      <p id="body">
+        2. Manny Pacquiao is the only boxer in history who has won 12 major world titles in 4 different weight classes.
+      </p>
+
+      <br>
+
+      <p id="body">
+        3. Out of his 72 boxing matches he won 62 and only lost 8.
+      </p>
+
+      <br>
+
+      <p id="body">
+        4. Started the Manny Pacquiao Fundation
+      </p>
+        <p id="subbody">
+            - The foundation aims to provide medical help, educational and social welfare programs in the Philippines, and develop sports facilities for at-risk youths and financial aid to families of struggling boxers.
+          </p>
+      
+      <br>
+
+      <p id="body">
+        5. He was elected in May 2010 to public office in the 15th Congress of the Philippines.
+      </p>
+
+      <br>
+
+      <p id="body">
+        6. On May 19, 2016, he was elected as a senator by the Commission of Elections, garnering 16 million votes.
+      </p>
+        <p id="subbody">
+            - He authored the bill “Free Internet Access in Public Places.” which was approved by the president.
+          </p>
+        <p id="subbody">
+            - Authored Senate Bill 192 — An act mandating the publication and dissemination of the handbook on rights and responsibilities of migrant workers, which the Philippine Overseas Employment Administration will do.
+          </p>
+
+        <br>
+
+        <p id="body">
+        7. He announced his presidential bid on September 19, 2021, under the PDP-Laban party.
+        </p>
+
+      
+      <br><br>
+      <hr>
+
+<!---------- Advocacies ------------>
+
+      <br><br>
+        <p id="subheading"><b>Advocacies</b></p>
+      <br>
+
+      <p id="body">
+        1. In a nutshell, Pacquiao aligns himself firmly with the Roman Catholic Faith and the poor people of the Philippines. Influenced by his impoverished upbringing, he has vowed to serve and help the people rise above poverty.
+      </p>
+
+      <br>
+
+      <p id="body">
+        2. Plans to create housing for 1.9 million informal in 3 years
+      </p>
+      <p id="subbody">
+            - Pacquiao strongly believes that the government can provide free housing for 1.9 million informal settlers in three years.
+          </p>
+      <p id="subbody">
+            - He made a conservative estimate stating that ending squatting can take four to five years.
+          </p>
+       <p id="subbody">
+            - Sen. Pacquiao is also targeting the 6.7 million families who do not own a house in this program. However, they will primarily focus on the 1.9 million informal settlers first.
+          </p>
+
+      <br>
+
+      <p id="body">
+        3. Pacquiao advocates fighting modern-day slavery of OFWs by enforcing their rights and authoring bills such as Senate Bill 192 to endure their safety abroad.
+      </p>
+
+      <br>
+
+      <p id="body">
+        4. As a former struggling athlete himself, Pacquiao is in favor of creating more support for Filipino athletes.
+      </p>
+        <p id="subbody">
+            - He is willing to extend financial support to athletes, especially if the country expects to become more competitive in international meets such as the SEA Games and the Olympics.
+          </p>
+
+      <br>
+
+      <p id="body">
+        5. Pacquiao has painted himself as Anti-corruption but has not explicitly stated how he is to eradicate corruption in the Philippines.
+      </p>
+
+      <br>
+
+      <p id="body">
+        6. Senator Manny Pacquiao plans to lower corporate taxes to attract global investors to the Philippines, creating a domino effect to more job opportunities.
+      </p>
+        <p id="subbody">
+            - He mentions that other countries like Singapore, Cambodia, Malaysia have a corporate tax of around 20%, the Philippines today has an estimated corporate tax of 31% according to the senator. 
+          </p>
+        <p id="subbody">
+            - By decreasing corporate tax to 15% flat, Pacquiao states that the Philippines will be able to compete with countries with larger economies.
+          </p>
+
+    
+
+      <br><br>
+      <hr>
+
+<!---------- Corrouption Cases ------------>
+
+      <br><br>
+        <p id="subheading"><b>Corruption Cases</b></p>
+      <br>
+
+      <p id="body">
+        No sources were found on the corruption cases filed against Manny Pacquiao. 
+      </p>
+         
+
+      <br><br>
+      <hr>
+
+<!---------- Scandals ------------>
+
+      <br><br>
+        <p id="subheading"><b>Scandals</b></p>
+      <br>
+
+      <p id="body">
+        1. He received a fake political science degree from the University of Makati.        
+      </p>
+        <p id="subbody">
+            - He couldn’t finish his studies at the Notre Dame of Dadiangas University in 2008, which prompted him to finish his studies at the University of Makati in an accelerated program (ETEEAP). Expanded Tertiary Education Equivalency and Accreditation Program allowed working professionals who could not complete college education to earn a bachelor's degree without going through the traditional four-year course.
+          </p>
+        <p id="subbody">
+            - The bachelor’s degree UMak issued to Manny Pacquiao was not accredited by CHEd to undertake the ETEEAP and is, therefore, an invalid degree.
+          </p>
+
+        <br>
+
+      <p id="body">
+        2. President Duterte called out Manny Pacquiao on allegations of a 2.2 billion tax evasion from his boxing career.       
+      </p>
+        <p id="subbody">
+            - The Court of Tax Appeals ordered the BIR to cease the collection of the Php3.29 billion tax deficiencies of Manny Pacquiao and his wife Jinkee due to the lack of merit.
+          </p>
+        <p id="subbody">
+            - President Duterte challenges Pacquiao, further bringing up Manny’s advocacy against corruption, stating if an official cheats the government, they are corrupt. 
+          </p>
+
+
+      <br><br>
+      <hr>
+
+<!---------- Famility Background ------------>
+
+      <br><br>
+        <p id="subheading"><b>Family Background</b></p>
+      <br>
+
+      <p id="body">
+        1. Jinkee Pacquiao, wife
+      </p>
+          <p id="subbody">
+            - Married Manny Pacquiao on May 10, 1999
+          </p>
+          <p id="subbody">
+            - Born on January 12, 1979, into the Nestor Jamora family 
+          </p>
+
+      <br>
+
+      <p id="body">
+        2. Emmanuel Jr. (Jimuel) Pacquiao, son
+      </p>
+          <p id="subbody">
+            - The first son of Manny
+          </p>
+          <p id="subbody">
+            - Born on February 6, 2001
+          </p>
+          <p id="subbody">
+            - Rose to fame as an amateur boxer, model, and actor
+          </p>
+
+      <br>
+
+      <p id="body">
+        3. Michael Stephen Pacquiao, son
+      </p>
+          <p id="subbody">
+            - Born December 13, 2001, he is the second son of Manny.
+          </p>
+          <p id="subbody">
+            - Rapper
+          </p>
+
+      <br>
+
+      <p id="body">
+        4. Mary Divine Grace (Princess) Pacquiao, daugther
+      </p>
+        <p id="subbody">
+            - Popular youtube vlogger
+          </p>
+          <p id="subbody">
+            - The eldest daughter of Manny Pacquiao
+          </p>
+
+      <br>
+
+      <p id="body">
+        4. Queen Elizabeth (Queenie) Pacquiao, daugther
+      </p>
+        <p id="subbody">
+            - The youngest daughter of Manny Pacquiao
+          </p>
+
+          <br>
+
+      <p id="body">
+        4. Israel Pacquiao, son
+      </p>
+        <p id="subbody">
+            - The youngest son of Manny Pacquiao
+          </p>
+          
+
+
+       <br><br><br><br><br>
+
+      <p id="source">Image Source: https://www.philstar.com/headlines/2021/05/27/2101226/pacquiao-tells-pdp-laban-snub-cusi-call-national-assembly</p>
+
+      <br>
+
+<!---------- Footer ------------>
+
+    </div>
+
+    <footer>
+    <div class="main-content">
+    <div class="left box">
+    <h2>ABOUT BANGON</h2>
+    <div class="content">
+    <p>BANGON is a website created by 12C of PAREF Woodrose School. BANGON means arise or to get up. The class aims to arise, raise our voices and showcase our perspectives in the different sectors and issues the Philippine society faces today through creative and literary outputs.</p>
+    <p><i> Ang "BANGON" ay isang website na inilikha ng 12C ng PAREF Woodrose School. Ang pagtindig o pagtayo mula sa upuan o sa pagkahiga mula sa kama ang kahulugan ng bangon. Nais ipaalam ng klase ang kanilang paninindigan tungkol sa iba't ibang bahagi at suliranin ng lipunan sa pamamagitan ng malikhaing pagsulat at sining. </i></p>
+
+    <div class="social">
+    <h1>AHON</h1>
+    <p>AHON is a campaign led by 12C of PAREF Woodrose School that gives awareness on fake news and voter's education.</p>
+    <a href="https://www.facebook.com/ahon.wr/"><span class="fab fa-facebook-f"></span></a>
+    <a href="https://www.instagram.com/ahon.wr/"><span class="fab fa-instagram"></span></a>
+    <a href="mailto: officialwr.ahon@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+    </div>
+    </div>
+  </div>
+
+    <div class="right box">
+    <h2>CONTACT US</h2>
+    <div class="content">
+    <form>
+      <div class="name">
+      <div class="text">Name *</div>
+      <input type="text" name="name" required>
+      </div>
+      <div class="email">
+      <div class="text">Email *</div>
+      <input type="email" name="email" required>
+      </div>
+      <div class="phone">
+      <div class="text">Phone *</div>
+      <input id="phone" type="text" name="phone" required>
+      </div>
+      <div class="msg">
+      <div class="text">Message *</div>
+      <textarea rows="2" cols="25" required></textarea>
+      </div>
+      <div class="btn">
+      <button onclick="validate()">Submit</button>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+     
+    <div class="bottom">
+      <center>
+        <span class="credit">Created by Woodrose Batch 2022 GAS and HUMSS Students</span>
+      </center>
+      </div>
+</footer>
+
+  </body>
+</div>
+
+</html>
